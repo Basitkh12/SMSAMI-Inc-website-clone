@@ -1,0 +1,440 @@
+@import  'properties';
+@import 'style';
+.contactc
+{
+    @include boxes( 140vh,100%,null,null);
+    background-image: url(../Images/contactb1.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    .Ctalk{
+       @include  boxes( 30vh,80%,1% 10%,null);
+
+       h1{
+       @include  h1s ( 90px, Montserrat, $darker, null);
+    text-align: center;
+    font-weight: $wt-bold;
+       }
+       p{
+        @include h1s ( 17px, Arial, $sub-heading, -3% 0%);
+        letter-spacing: 0px;
+        text-align: center;
+        font-weight:$wt-normal;
+        line-height: 1.5;
+       }
+    }
+    .form{
+        @include buttons($basic-color, null, 15px, 40px, null, 1px solid $alternate-primary );
+        @include boxes( 67vh,30%,78px auto,null);
+
+        h1{
+            @include h1s ( 26px, Helvetica, $darker, null);
+            text-align: center;
+            font-weight: $wt-bold;
+        }
+        #name,  #email, #subject
+        {
+
+            border: 1px solid $un-focus;
+            border-radius: 4px;
+            padding: 18px 7px;
+            margin: 8px 0;
+             width: 88%;
+        }
+        #message{
+            border: 1px solid $un-focus;
+            text-align: left;
+            height: 20vh;
+            width: 90%;
+        }
+        #submit{
+           @include buttons(null, 0 $default-radius 25px $darken, null, 12px 55px, 12px, null );
+           @include boxes( 47px,null,12% 32%,null);
+             text-transform: uppercase;
+             border-color: $basic-color;
+            line-height: 44px;
+             font-weight: $wt-bold;
+            color: $darker;
+            &:hover{
+                background-color: $light-brown;
+                border-color: $light-brown;
+                color: $basic-color;
+            }
+        }
+    }
+}
+.cboxes
+{
+   @include grid(50% 50%, 50% 50%, null, grid, null, 80%);
+    margin-left: 10%;
+    margin-top: -7%;
+    .cbox1
+{
+    @include buttons($basic-color, 0 0 30px 0 $dark-green, 20px, null, null, 1px solid $green);
+    @include boxes( 30vh,75%,18% 10%,null);
+}
+    .cbox2 
+{
+    @include buttons($basic-color, 0 0 30px 0 $mustard, 20px, null, null, 1px solid $orange);
+    @include boxes( 30vh,75%,18%,null);
+}
+    .cbox3
+{
+    @include buttons($basic-color,0 0 30px 0 $maroon, 20px, null, null, 1px solid $red );
+    @include boxes( 30vh,75%,9% 9%,null);
+}
+.cbox1 #s , .cbox2 #s ,  .cbox3 #s
+{
+   @include  h1s ( 16px, Arial, $sub-heading-light, null);
+   padding: 3% 9%;
+    line-height: 1.5;
+    font-weight:$wt-normal;
+}
+.cbox1 h2 ,  .cbox2 h2,  .cbox3 h2
+{
+    @include h1s ( 18px, sans-serif, $darker, null);
+    padding: 3% 9%;
+    line-height: 1.28;
+    font-weight: $wt-bold;
+}
+}
+.media 
+{
+    text-align: center;
+    h1{
+        font-family: sans-serif;
+            font-size: 24px;
+    }
+    .fas,.fab, .fa-brands
+ {
+    padding-left: 2%;
+    font-size: 30px;
+    color: $darker;
+ }
+}
+
+                 /* RESPONSIVENESS*/
+
+@include on-xs-down
+{
+.contactc  
+{
+    .Ctalk{
+       @include boxes( 26vh,89%,1% 5%,null);
+       h1 {
+       @include h1s ( 50px, Helvetica, $darker, null);
+        text-align: center;
+        font-weight: $wt-bold;
+    }
+    p {
+        @include h1s ( 14px, Arial, $sub-heading, -5% 0 0 0);
+        letter-spacing: 0px;
+        text-align: center;
+        font-weight: $wt-normal;
+        line-height: 1.5;
+    }
+}
+.form 
+{
+    @include buttons($basic-color, null, 15px,  40px, null,  1px solid $alternate-primary );
+    margin: 50px auto;
+    height: 74vh;
+    width: 73%;
+    #submit{
+         &:hover{
+             background-color: $light-brown;
+             border-color: $light-brown;
+             color: $basic-color;
+         }
+     }
+}
+}
+.cboxes 
+{
+    @include grid(auto, auto auto auto, null, grid, 119vh, 100%);
+    margin:60px 0 0 0%;
+    .cbox1 {
+       @include buttons($basic-color, 0 0 30px 0 $dark-green, 20px, null, null, 1px solid $green );
+        margin: 6% 10%;
+        height: 29vh;
+        width: 75%;
+    }
+    .cbox2 
+{
+    @include buttons($basic-color, 0 0 30px 0 $mustard, 20px, null, null, 1px solid $orange );
+     margin: -165px 10%;
+    height: 29vh;
+    width: 75%;
+}
+.cbox3{
+    @include buttons($basic-color, 0 0 30px 0 $maroon, 20px, null, null, 1px solid $red );
+    margin: -93px 10%;
+    height: 29vh;
+    width: 75%;
+}
+.cbox1 h2, .cbox2 h2,  .cbox3 h2 
+{
+    @include h1s ( 18px, Helvetica, $darker,  27px 29px);
+    line-height: 1.28;
+    font-weight: $wt-bold;
+}
+.cbox1 #s,  .cbox2 #s,  .cbox3 #s 
+{
+    @include h1s ( 15px, Arial, $sub-heading-light, 10px 0 0 20px);
+    line-height: 1.5;
+    font-weight: $wt-normal;
+}
+}
+.media 
+{
+    @include boxes( 13vh,99%, 4% 2%,null);
+    .iconwrapper 
+{
+    margin: -2% 36%;
+    width: 40%;
+}
+}
+}
+@include on-sm-down{
+    .contactc
+{
+    background-image: url(../Images/contactb1.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    height: 125vh;
+    width: 100%;
+    .Ctalk
+    { 
+        @include boxes( 30vh, 80%, 1% 10%,0);
+        h1
+{
+    @include h1s ( 52px, Helvetica, $darker, null);
+    text-align: center;
+    font-weight: $wt-bold;
+}
+p
+{
+    @include h1s ( 14px, Arial, $sub-heading, -3% 0 0 0);
+    letter-spacing: 0px;
+    text-align: center;
+    font-weight: $wt-normal;
+    line-height: 1.5;
+}
+    }
+    .form
+{
+    @include buttons($basic-color, null, 15px, 40px, null,1px solid $alternate-primary );
+    margin: 51px auto;
+    height: 70vh;
+    width: 48%;
+    h1
+{
+    @include h1s ( 24px, Helvetica, $darker, null);
+    text-align: center;
+}
+#name,  #email,  #subject 
+{
+    @include buttons(null, null, 4px, 18px 7px, null,  1px solid $un-focus );
+    margin: 8px 0;
+    width: 88%;
+}
+#message
+{
+    @include buttons(null, null, 4px, 18px 7px, null,  1px solid $un-focus );
+    text-align: left;
+    height: 20vh;
+    width: 90%;
+}
+#submit
+{
+    @include buttons(null, 0 $default-radius 25px $darken, null,12px 55px, 12px, null );
+    text-transform: uppercase;
+    border-color: $basic-color;
+    line-height: 44px;
+    font-weight: $wt-bold;
+    margin: 3% 19%;
+    height: 47px;
+    color: $darker;
+    &:hover{
+        background-color: $light-brown;
+    border-color: $light-brown;
+    color: $basic-color
+    }
+}
+}
+}
+.cboxes
+{
+    @include grid(50% 50%, 50% 50%, null, grid, 104vh, 100%);
+    margin-left: 0px;
+    margin-top: 60px;
+    .cbox1
+{
+    @include buttons($basic-color, 0 0 30px 0 $dark-green, 20px, null, null,1px solid $green );
+    margin: 18% 3%;
+    height: 48%;
+    width: 90%;
+}
+.cbox2 
+{
+    @include buttons($basic-color, 0 0 30px 0 $mustard, 20px, null, null,1px solid $orange );
+    margin: 16% 7%;
+    height: 50%;
+    width: 90%;
+}
+.cbox3
+{
+    @include buttons($basic-color, 0 0 30px 0 $maroon, 20px, null, null,1px solid $red );
+    margin: -15% 3%;
+    height: 50%;
+    width: 90%;
+}
+.cbox1 h2 ,  .cbox2 h2,  .cbox3 h2
+{
+    @include  h1s ( 15px, Helvetica, $darker,  27px 29px);
+    line-height: 1.28;
+    font-weight: $wt-bold;
+}
+.cbox1 #s ,  .cbox2 #s ,  .cbox3 #s
+{
+    @include  h1s ( 13px, Arial, $sub-heading, 10px 0 0 20px);
+    line-height: 1.5;
+    font-weight: $wt-normal;
+}
+}
+.media 
+{
+    @include boxes( 13vh,63%,1% 19%,null);
+    .iconwrapper
+    {
+        margin: -4% 23%;
+        width: 40%;
+    } 
+}
+}
+@include on-md-down
+{
+    .contactc
+{
+    height: 125vh;
+    width: 100%;
+    .Ctalk
+{ 
+    @include boxes( 30vh,80%,1% 10%,null);
+    h1
+{
+    font-size: 52px;
+}
+p
+{
+    
+    font-size: 14px;
+}
+}
+.form
+{
+    margin: 46px auto;
+    height: 72vh;
+    width: 48%;
+}
+}
+.cboxes
+{
+    margin-top: 60px;
+    height: 104vh;
+    width: 100%;
+    .cbox1
+    {
+        margin: 18% 3%;
+        height: 55%;
+        width: 90%;
+    }
+    .cbox2 
+{
+    margin: 16% 7%;
+    height: 55%;
+    width: 90%;
+}
+.cbox3
+{
+    margin: -2% 3%;
+    height: 55%;
+    width: 90%;
+}
+.cbox1 h2 ,  .cbox2 h2, .cbox3 h2
+{
+    font-size: 20px;
+}
+.cbox1 #s ,  .cbox2 #s ,  .cbox3 #s
+{
+    font-size: 16px;
+    color: $sub-heading-light;
+}
+}
+.media 
+{
+    margin: 1% 19%;
+    height: 15vh;
+    width: 63%;
+    h1
+    {
+        font-size: 26px;
+    }
+}
+}
+@include on-lg-down
+{
+    .contactc .Ctalk h1
+{
+    font-size: 65px;
+}
+.contactc .form
+{
+    height: 75vh;
+    width: 48%;
+}
+.cboxes
+{
+ 
+    margin-left: 0px;
+    margin-top: 60px;
+    display: grid;
+    height: 104vh;
+    width: 100%;
+     .cbox1 ,.cbox2 , .cbox3{
+        height: 35vh;
+     }
+    .cbox1 #s ,  .cbox2 #s , .cbox3 #s
+{
+   
+    color: $sub-heading;
+}
+}
+.media 
+{
+    margin: 1% 25%;
+    height: 17vh;
+    width: 50%;
+}
+}
+@include on-exl-down{
+    .contactc .Ctalk {
+        height: 35vh;
+    
+    }
+    .contactc .Ctalk h1 {
+        font-size: 80px;
+    }
+    .contactc .form {
+        height: 71vh;
+    }
+    .cboxes {
+        margin: 0;
+        height: 122vh;
+        width: 100%;
+    }
+    .media {
+        margin: 1% 30%;
+        height: 16vh;
+        width: 35%;
+    }
+}

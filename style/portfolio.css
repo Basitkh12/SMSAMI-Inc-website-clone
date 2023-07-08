@@ -1,0 +1,700 @@
+.Pimg {
+  background-image: url(../Images/portfoliob1.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 21vh;
+  margin-top: -24px;
+}
+
+.Pimg .bckcolor {
+  height: 21vh;
+  width: 100%;
+  background-color: rgba(12, 80, 159, 0.8);
+  z-index: 1;
+}
+.Pimg .bckcolor h2 {
+  text-align: center;
+  color: #fff;
+  font-size: 31px;
+  padding-top: 3%;
+}
+
+.Pshead {
+  border-bottom: 1px solid #e7e6e6;
+  border-top: 1px solid #e7e6e6;
+  line-height: 2;
+  margin: 4% 12%;
+}
+.Pshead a {
+  font-size: 16px;
+  font-family: Arial;
+  color: #999;
+  -webkit-text-decoration-line: none;
+          text-decoration-line: none;
+  padding: 15px;
+}
+.Pshead a:hover {
+  color: #0c509f;
+}
+.Pshead #prfh, .Pshead #des, .Pshead #mble, .Pshead #prf-h, .Pshead #web-p {
+  border-top: 3px solid #0c509f;
+  padding-top: 8px;
+  color: #0c509f;
+}
+
+.Pflex {
+  grid-template-columns: auto auto;
+  grid-template-rows: auto auto auto auto auto;
+  justify-content: space-evenly;
+  display: grid;
+  height: auto;
+  width: 70%;
+  margin-left: 15%;
+}
+.Pflex .pbox1, .Pflex .pbox2, .Pflex .pbox3, .Pflex .pbox4, .Pflex .pbox5, .Pflex .pbox6, .Pflex .pbox7, .Pflex .pbox8, .Pflex .pbox9 {
+  position: relative;
+  margin-top: 30px;
+}
+.Pflex .pbox1 .wrapp, .Pflex .pbox2 .wrapp, .Pflex .pbox3 .wrapp, .Pflex .pbox4 .wrapp, .Pflex .pbox5 .wrapp, .Pflex .pbox6 .wrapp, .Pflex .pbox7 .wrapp, .Pflex .pbox8 .wrapp, .Pflex .pbox9 .wrapp {
+  position: absolute;
+  height: 26vh;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  text-align: center;
+}
+.Pflex .pbox1 .wrapp h2, .Pflex .pbox2 .wrapp h2, .Pflex .pbox3 .wrapp h2, .Pflex .pbox4 .wrapp h2, .Pflex .pbox5 .wrapp h2, .Pflex .pbox6 .wrapp h2, .Pflex .pbox7 .wrapp h2, .Pflex .pbox8 .wrapp h2, .Pflex .pbox9 .wrapp h2 {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 35px;
+  color: #fff;
+}
+.Pflex .pbox1 .wrapp h4, .Pflex .pbox2 .wrapp h4, .Pflex .pbox3 .wrapp h4, .Pflex .pbox4 .wrapp h4, .Pflex .pbox5 .wrapp h4, .Pflex .pbox6 .wrapp h4, .Pflex .pbox7 .wrapp h4, .Pflex .pbox8 .wrapp h4, .Pflex .pbox9 .wrapp h4 {
+  font-size: 11px;
+  font-family: Arial;
+  color: #fff;
+}
+.Pflex .pbox1 i, .Pflex .pbox2 i, .Pflex .pbox3 i, .Pflex .pbox4 i, .Pflex .pbox5 i, .Pflex .pbox6 i, .Pflex .pbox7 i, .Pflex .pbox8 i, .Pflex .pbox9 i {
+  font-size: 18px;
+  color: #55C0E9;
+  padding: 3% 2%;
+  background-color: #fff;
+  border-radius: 50%;
+}
+.Pflex .pbox1 a, .Pflex .pbox2 a, .Pflex .pbox3 a, .Pflex .pbox4 a, .Pflex .pbox5 a, .Pflex .pbox6 a, .Pflex .pbox7 a, .Pflex .pbox8 a, .Pflex .pbox9 a {
+  -webkit-text-decoration-line: none;
+          text-decoration-line: none;
+}
+
+/* PORTFOLIO Design PAGE CSS*/
+.P2flex {
+  grid-template-columns: auto auto;
+  grid-template-rows: auto;
+  justify-content: space-evenly;
+  display: grid;
+  height: 50vh;
+  width: 70%;
+  align-items: flex-start;
+  margin-left: 15%;
+}
+.P2flex .p2box1, .P2flex .p2box2 {
+  position: relative;
+}
+.P2flex .p2box1 .wrapp, .P2flex .p2box2 .wrapp {
+  position: absolute;
+  height: 26vh;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  text-align: center;
+}
+.P2flex .p2box1 .wrapp h2, .P2flex .p2box2 .wrapp h2 {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 35px;
+  color: #fff;
+}
+.P2flex .p2box1 .wrapp h4, .P2flex .p2box2 .wrapp h4 {
+  font-family: "Open Sans", Arial, Helvetica, sans-serif;
+  font-size: 11px;
+  color: #fff;
+}
+.P2flex .p2box1 .wrapp i, .P2flex .p2box2 .wrapp i {
+  font-size: 18px;
+  color: #55C0E9;
+  padding: 3% 2%;
+  background-color: #fff;
+  border-radius: 50%;
+}
+.P2flex .p2box1 a, .P2flex .p2box2 a {
+  -webkit-text-decoration-line: none;
+          text-decoration-line: none;
+}
+
+/* PORTFOLIO Mobile PAGE CSS*/
+.p3box1 {
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+.p3box1 .wrapp {
+  position: absolute;
+  height: 26vh;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  text-align: center;
+}
+.p3box1 .wrapp h2 {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 35px;
+  color: #fff;
+}
+.p3box1 .wrapp h4 {
+  font-family: "Open Sans", Arial, Helvetica, sans-serif;
+  color: #fff;
+  font-size: 11px;
+}
+.p3box1 .wrapp i {
+  font-size: 18px;
+  color: #55C0E9;
+  padding: 1% 1%;
+  background-color: #fff;
+  border-radius: 50%;
+}
+.p3box1 a {
+  -webkit-text-decoration-line: none;
+          text-decoration-line: none;
+}
+
+/* PORTFOLIO Portfolio-Home PAGE CSS*/
+.P4flex {
+  grid-template-columns: auto auto;
+  grid-template-rows: auto auto auto;
+  justify-content: space-evenly;
+  display: grid;
+  height: 140vh;
+  width: 70%;
+  align-items: flex-start;
+  margin-left: 15%;
+}
+.P4flex .p4box1, .P4flex .p4box2, .P4flex .p4box3, .P4flex .p4box4, .P4flex .p4box5 {
+  position: relative;
+  margin-top: 30px;
+}
+.P4flex .p4box1 .wrapp, .P4flex .p4box2 .wrapp, .P4flex .p4box3 .wrapp, .P4flex .p4box4 .wrapp, .P4flex .p4box5 .wrapp {
+  position: absolute;
+  height: 26vh;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  text-align: center;
+}
+.P4flex .p4box1 .wrapp h2, .P4flex .p4box2 .wrapp h2, .P4flex .p4box3 .wrapp h2, .P4flex .p4box4 .wrapp h2, .P4flex .p4box5 .wrapp h2 {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 35px;
+  color: #fff;
+}
+.P4flex .p4box1 .wrapp h4, .P4flex .p4box2 .wrapp h4, .P4flex .p4box3 .wrapp h4, .P4flex .p4box4 .wrapp h4, .P4flex .p4box5 .wrapp h4 {
+  font-family: "Open Sans", Arial, Helvetica, sans-serif;
+  color: #fff;
+  font-size: 11px;
+}
+.P4flex .p4box1 .wrapp i, .P4flex .p4box2 .wrapp i, .P4flex .p4box3 .wrapp i, .P4flex .p4box4 .wrapp i, .P4flex .p4box5 .wrapp i {
+  font-size: 18px;
+  color: #55C0E9;
+  padding: 3% 2%;
+  background-color: #fff;
+  border-radius: 50%;
+}
+.P4flex .p4box1 a, .P4flex .p4box2 a, .P4flex .p4box3 a, .P4flex .p4box4 a, .P4flex .p4box5 a {
+  -webkit-text-decoration-line: none;
+          text-decoration-line: none;
+}
+
+/* RESPONSIVENESS*/
+@media (min-width: 360px) and (max-width: 600px) {
+  .Pshead {
+    border-bottom: 1px solid #e7e6e6;
+    border-top: 1px solid #e7e6e6;
+    line-height: 2;
+    margin: 4% 0%;
+    font-size: 11px;
+  }
+  .Pflex {
+    grid-template-columns: 98%;
+    grid-template-rows: auto auto auto auto auto auto;
+    display: grid;
+    height: auto;
+    width: 81%;
+    margin-left: 15%;
+  }
+  .Pflex .pbox1, .Pflex .pbox2, .Pflex .pbox3, .Pflex .pbox4, .Pflex .pbox5, .Pflex .pbox6, .Pflex .pbox7, .Pflex .pbox8, .Pflex .pbox9 {
+    height: 39vh;
+    width: 100%;
+  }
+  .Pflex .pbox1 img, .Pflex .pbox1 .p3box1 img,
+.Pflex .pbox1 .P4flex .p4box1 img, .Pflex .pbox1 .P4flex .p4box2 img, .Pflex .pbox1 .P4flex .p4box3 img, .Pflex .pbox1 .P4flex .p4box4 img, .Pflex .pbox1 .P4flex .p4box5 img, .Pflex .pbox2 img, .Pflex .pbox2 .p3box1 img,
+.Pflex .pbox2 .P4flex .p4box1 img, .Pflex .pbox2 .P4flex .p4box2 img, .Pflex .pbox2 .P4flex .p4box3 img, .Pflex .pbox2 .P4flex .p4box4 img, .Pflex .pbox2 .P4flex .p4box5 img, .Pflex .pbox3 img, .Pflex .pbox3 .p3box1 img,
+.Pflex .pbox3 .P4flex .p4box1 img, .Pflex .pbox3 .P4flex .p4box2 img, .Pflex .pbox3 .P4flex .p4box3 img, .Pflex .pbox3 .P4flex .p4box4 img, .Pflex .pbox3 .P4flex .p4box5 img, .Pflex .pbox4 img, .Pflex .pbox4 .p3box1 img,
+.Pflex .pbox4 .P4flex .p4box1 img, .Pflex .pbox4 .P4flex .p4box2 img, .Pflex .pbox4 .P4flex .p4box3 img, .Pflex .pbox4 .P4flex .p4box4 img, .Pflex .pbox4 .P4flex .p4box5 img, .Pflex .pbox5 img, .Pflex .pbox5 .p3box1 img,
+.Pflex .pbox5 .P4flex .p4box1 img, .Pflex .pbox5 .P4flex .p4box2 img, .Pflex .pbox5 .P4flex .p4box3 img, .Pflex .pbox5 .P4flex .p4box4 img, .Pflex .pbox5 .P4flex .p4box5 img, .Pflex .pbox6 img, .Pflex .pbox6 .p3box1 img,
+.Pflex .pbox6 .P4flex .p4box1 img, .Pflex .pbox6 .P4flex .p4box2 img, .Pflex .pbox6 .P4flex .p4box3 img, .Pflex .pbox6 .P4flex .p4box4 img, .Pflex .pbox6 .P4flex .p4box5 img, .Pflex .pbox7 img, .Pflex .pbox7 .p3box1 img,
+.Pflex .pbox7 .P4flex .p4box1 img, .Pflex .pbox7 .P4flex .p4box2 img, .Pflex .pbox7 .P4flex .p4box3 img, .Pflex .pbox7 .P4flex .p4box4 img, .Pflex .pbox7 .P4flex .p4box5 img, .Pflex .pbox8 img, .Pflex .pbox8 .p3box1 img,
+.Pflex .pbox8 .P4flex .p4box1 img, .Pflex .pbox8 .P4flex .p4box2 img, .Pflex .pbox8 .P4flex .p4box3 img, .Pflex .pbox8 .P4flex .p4box4 img, .Pflex .pbox8 .P4flex .p4box5 img, .Pflex .pbox9 img, .Pflex .pbox9 .p3box1 img,
+.Pflex .pbox9 .P4flex .p4box1 img, .Pflex .pbox9 .P4flex .p4box2 img, .Pflex .pbox9 .P4flex .p4box3 img, .Pflex .pbox9 .P4flex .p4box4 img, .Pflex .pbox9 .P4flex .p4box5 img {
+    width: 100%;
+    height: 257px;
+  }
+  .Pflex .pbox1 .wrapp, .Pflex .pbox2 .wrapp, .Pflex .pbox3 .wrapp, .Pflex .pbox4 .wrapp, .Pflex .pbox5 .wrapp, .Pflex .pbox6 .wrapp, .Pflex .pbox7 .wrapp, .Pflex .pbox8 .wrapp, .Pflex .pbox9 .wrapp {
+    font-size: 13px;
+    font-family: Helvetica;
+    color: #fff;
+    margin: -223px 30%;
+    text-align: center;
+    line-height: 0;
+    border: 6px solid #000;
+    width: 50%;
+    z-index: 1;
+  }
+  .Pflex .pbox1 .wrapp i, .Pflex .pbox2 .wrapp i, .Pflex .pbox3 .wrapp i, .Pflex .pbox4 .wrapp i, .Pflex .pbox5 .wrapp i, .Pflex .pbox6 .wrapp i, .Pflex .pbox7 .wrapp i, .Pflex .pbox8 .wrapp i, .Pflex .pbox9 .wrapp i {
+    background-color: #fff;
+    border-radius: 59%;
+    padding: 3% 0 0 0;
+    font-size: 18px;
+    text-align: center;
+    color: #55C0E9;
+    height: 4vh;
+    width: 16%;
+  }
+  .P2flex {
+    grid-template-columns: auto;
+    grid-template-rows: auto;
+    justify-content: space-evenly;
+    display: grid;
+    height: auto;
+    width: 85%;
+    align-items: flex-start;
+    margin-left: 15%;
+  }
+  .P2flex .p2box1, .P2flex .p2box2 {
+    height: 39vh;
+    width: 98%;
+    margin: 2% 0%;
+  }
+  .P2flex .p2box1 img, .P2flex .p2box2 img {
+    width: 100%;
+    height: 257px;
+  }
+  .P2flex .p2box1 .wrapp, .P2flex .p2box2 .wrapp {
+    font-size: 18px;
+    font-family: Helvetica;
+    color: #fff;
+    margin: -214px 15%;
+    text-align: center;
+    line-height: 0;
+    width: 74%;
+    z-index: 1;
+  }
+  .p3box1 {
+    height: 39vh;
+    width: 80%;
+    margin: 0 0 0 15%;
+  }
+  .p3box1 img {
+    width: 100%;
+    height: 257px;
+  }
+  .p3box1 .wrapp {
+    font-size: 20px;
+    font-family: Helvetica;
+    color: #fff;
+    margin: -236px 15%;
+    text-align: center;
+    line-height: 0;
+    width: 74%;
+    z-index: 1;
+  }
+  .P4flex {
+    grid-template-columns: auto;
+    grid-template-rows: auto auto auto;
+    justify-content: space-evenly;
+    display: grid;
+    height: auto;
+    width: 70%;
+    align-items: flex-start;
+    margin-left: 15%;
+  }
+  .P4flex .p4box1 img, .P4flex .p4box2 img, .P4flex .p4box3 img, .P4flex .p4box4 img, .P4flex .p4box5 img {
+    width: 100%;
+    height: 257px;
+  }
+  .P4flex .p4box1 .wrapp, .P4flex .p4box2 .wrapp, .P4flex .p4box3 .wrapp, .P4flex .p4box4 .wrapp, .P4flex .p4box5 .wrapp {
+    font-size: 18px;
+    font-family: Helvetica;
+    color: #fff;
+    margin: -236px 15%;
+    text-align: center;
+    line-height: 0;
+    width: 74%;
+    z-index: 1;
+  }
+}
+@media (min-width: 601px) and (max-width: 767px) {
+  .Pimg {
+    background-image: url(../Images/portfoliob1.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 21vh;
+    background-size: 150%;
+  }
+  .Pimg .bckcolor {
+    background-color: rgba(12, 80, 159, 0.8);
+    height: 21vh;
+    width: 100%;
+    z-index: 1;
+  }
+  .Pshead {
+    border-bottom: 1px solid #e7e6e6;
+    border-top: 1px solid #e7e6e6;
+    line-height: 2;
+    margin: 4% 12%;
+  }
+  .Pshead a {
+    font-size: 15px;
+    font-family: Arial;
+    color: #999;
+    -webkit-text-decoration-line: none;
+            text-decoration-line: none;
+    padding: 15px;
+  }
+  .Pshead a:hover {
+    color: #0c509f;
+  }
+  .Pshead #prfh, .Pshead #des, .Pshead #mble, .Pshead #prf-h, .Pshead #web-p {
+    border-top: 3px solid #0c509f;
+    padding-top: 8px;
+    color: #0c509f;
+  }
+  .Pflex {
+    grid-template-columns: auto auto;
+    grid-template-rows: auto auto auto auto auto;
+    justify-content: space-evenly;
+    display: grid;
+    height: 240vh;
+    width: 99%;
+    margin: 1%;
+  }
+  .Pflex .pbox1, .Pflex .pbox2, .Pflex .pbox3, .Pflex .pbox4, .Pflex .pbox5, .Pflex .pbox6, .Pflex .pbox7, .Pflex .pbox8, .Pflex .pbox9 {
+    height: 39vh;
+    width: 95%;
+  }
+  .Pflex .pbox1 img, .Pflex .pbox2 img, .Pflex .pbox3 img, .Pflex .pbox4 img, .Pflex .pbox5 img, .Pflex .pbox6 img, .Pflex .pbox7 img, .Pflex .pbox8 img, .Pflex .pbox9 img {
+    width: 100%;
+    height: 100%;
+  }
+  .Pflex .pbox1 .wrapp, .Pflex .pbox2 .wrapp, .Pflex .pbox3 .wrapp, .Pflex .pbox4 .wrapp, .Pflex .pbox5 .wrapp, .Pflex .pbox6 .wrapp, .Pflex .pbox7 .wrapp, .Pflex .pbox8 .wrapp, .Pflex .pbox9 .wrapp {
+    font-size: 16px;
+    font-family: Helvetica;
+    color: #fff;
+    margin: -202px 13%;
+    text-align: center;
+    line-height: 0;
+    width: 90%;
+    z-index: 1;
+  }
+  .Pflex .pbox1 .wrapp h4, .Pflex .pbox2 .wrapp h4, .Pflex .pbox3 .wrapp h4, .Pflex .pbox4 .wrapp h4, .Pflex .pbox5 .wrapp h4, .Pflex .pbox6 .wrapp h4, .Pflex .pbox7 .wrapp h4, .Pflex .pbox8 .wrapp h4, .Pflex .pbox9 .wrapp h4 {
+    font-family: "Open Sans", Arial, Helvetica, sans-serif;
+    font-size: 11px;
+  }
+  .Pflex .pbox1 .wrapp i, .Pflex .pbox2 .wrapp i, .Pflex .pbox3 .wrapp i, .Pflex .pbox4 .wrapp i, .Pflex .pbox5 .wrapp i, .Pflex .pbox6 .wrapp i, .Pflex .pbox7 .wrapp i, .Pflex .pbox8 .wrapp i, .Pflex .pbox9 .wrapp i {
+    background-color: #fff;
+    border-radius: 62%;
+    padding: 3% 0 0 0;
+    font-size: 18px;
+    text-align: center;
+    color: #55C0E9;
+    height: 4vh;
+    width: 10%;
+  }
+  /* PORTFOLIO Design PAGE CSS*/
+  .P2flex {
+    grid-template-columns: auto auto;
+    grid-template-rows: auto;
+    justify-content: space-evenly;
+    display: grid;
+    height: 50vh;
+    width: 99%;
+    margin-left: 1%;
+  }
+  .P2flex .p2box1, .P2flex .p2box2 {
+    height: 39vh;
+    width: 96%;
+  }
+  .P2flex .p2box1 img, .P2flex .p2box2 img {
+    height: 100%;
+    width: 100%;
+  }
+  .P2flex .p2box1 .wrapp, .P2flex .p2box2 .wrapp {
+    font-size: 17px;
+    font-family: Helvetica;
+    color: #fff;
+    margin: -200px 15%;
+    text-align: center;
+    line-height: 0;
+    width: 79%;
+    z-index: 1;
+  }
+  .P2flex .p2box1 .wrapp h4, .P2flex .p2box2 .wrapp h4 {
+    font-family: "Open Sans", Arial, Helvetica, sans-serif;
+    font-size: 11px;
+  }
+  .P2flex .p2box1 .wrapp i, .P2flex .p2box2 .wrapp i {
+    background-color: #fff;
+    border-radius: 62%;
+    padding: 3% 0 0 0;
+    font-size: 18px;
+    text-align: center;
+    color: #55C0E9;
+    height: 4vh;
+    width: 10%;
+  }
+  /* PORTFOLIO Mobile PAGE CSS*/
+  .p3box1 {
+    height: 45vh;
+    width: 62%;
+    margin: 0 0 0 16%;
+  }
+  .p3box1 img {
+    height: 100%;
+    width: 100%;
+  }
+  /* PORTFOLIO Portfolio-Home PAGE CSS*/
+  .P4flex {
+    grid-template-columns: auto auto;
+    grid-template-rows: auto auto auto;
+    justify-content: space-evenly;
+    display: grid;
+    height: 140vh;
+    width: 100%;
+    align-items: flex-start;
+    margin-left: 0%;
+  }
+  .P4flex .p4box1, .P4flex .p4box2, .P4flex .p4box3, .P4flex .p4box4, .P4flex .p4box5 {
+    height: 39vh;
+    width: 96%;
+  }
+  .P4flex .p4box1 img, .P4flex .p4box2 img, .P4flex .p4box3 img, .P4flex .p4box4 img, .P4flex .p4box5 img {
+    height: 100%;
+    width: 100%;
+  }
+  .P4flex .p4box1 .wrapp, .P4flex .p4box2 .wrapp, .P4flex .p4box3 .wrapp, .P4flex .p4box4 .wrapp, .P4flex .p4box5 .wrapp {
+    font-size: 18px;
+    font-family: Helvetica;
+    color: #fff;
+    margin: -200px 15%;
+    text-align: center;
+    line-height: 0;
+    width: 81%;
+    z-index: 1;
+  }
+  .P4flex .p4box1 .wrapp h4, .P4flex .p4box2 .wrapp h4, .P4flex .p4box3 .wrapp h4, .P4flex .p4box4 .wrapp h4, .P4flex .p4box5 .wrapp h4 {
+    font-family: "Open Sans", Arial, Helvetica, sans-serif;
+    font-size: 11px;
+  }
+  .P4flex .p4box1 .wrapp i, .P4flex .p4box2 .wrapp i, .P4flex .p4box3 .wrapp i, .P4flex .p4box4 .wrapp i, .P4flex .p4box5 .wrapp i {
+    background-color: #fff;
+    border-radius: 62%;
+    padding: 3% 0 0 0;
+    font-size: 18px;
+    text-align: center;
+    color: #55C0E9;
+    height: 4vh;
+    width: 10%;
+  }
+}
+@media (min-width: 767px) and (max-width: 992px) {
+  .Pflex {
+    grid-template-columns: auto auto;
+    grid-template-rows: auto auto auto auto auto;
+    justify-content: space-evenly;
+    display: grid;
+    height: 240vh;
+    width: 99%;
+    margin-left: 1%;
+  }
+  .Pflex .pbox1, .Pflex .pbox2, .Pflex .pbox3, .Pflex .pbox4, .Pflex .pbox5, .Pflex .pbox6, .Pflex .pbox7, .Pflex .pbox8, .Pflex .pbox9 {
+    height: 39vh;
+    width: 95%;
+  }
+  .Pflex .pbox1 img, .Pflex .pbox2 img, .Pflex .pbox3 img, .Pflex .pbox4 img, .Pflex .pbox5 img, .Pflex .pbox6 img, .Pflex .pbox7 img, .Pflex .pbox8 img, .Pflex .pbox9 img {
+    width: 100%;
+    height: 100%;
+  }
+  .Pflex .pbox1 .wrapp, .Pflex .pbox2 .wrapp, .Pflex .pbox3 .wrapp, .Pflex .pbox4 .wrapp, .Pflex .pbox5 .wrapp, .Pflex .pbox6 .wrapp, .Pflex .pbox7 .wrapp, .Pflex .pbox8 .wrapp, .Pflex .pbox9 .wrapp {
+    font-size: 16px;
+    font-family: Helvetica;
+    color: #fff;
+    margin: -217px 13%;
+    text-align: center;
+    line-height: 0;
+    width: 90%;
+    z-index: 1;
+  }
+  .Pflex .pbox1 .wrapp h4, .Pflex .pbox2 .wrapp h4, .Pflex .pbox3 .wrapp h4, .Pflex .pbox4 .wrapp h4, .Pflex .pbox5 .wrapp h4, .Pflex .pbox6 .wrapp h4, .Pflex .pbox7 .wrapp h4, .Pflex .pbox8 .wrapp h4, .Pflex .pbox9 .wrapp h4 {
+    font-family: "Open Sans", Arial, Helvetica, sans-serif;
+    font-size: 11px;
+  }
+  .Pflex .pbox1 .wrapp i, .Pflex .pbox2 .wrapp i, .Pflex .pbox3 .wrapp i, .Pflex .pbox4 .wrapp i, .Pflex .pbox5 .wrapp i, .Pflex .pbox6 .wrapp i, .Pflex .pbox7 .wrapp i, .Pflex .pbox8 .wrapp i, .Pflex .pbox9 .wrapp i {
+    background-color: #fff;
+    border-radius: 62%;
+    padding: 3% 0 0 0;
+    font-size: 18px;
+    text-align: center;
+    color: #55C0E9;
+    height: 4vh;
+    width: 10%;
+  }
+  .P2flex {
+    grid-template-columns: auto auto;
+    grid-template-rows: auto;
+    justify-content: space-evenly;
+    display: grid;
+    height: auto;
+    width: 99%;
+    margin-left: 1%;
+  }
+  .P2flex .p2box1, .P2flex .p2box2 {
+    height: 39vh;
+    width: 96%;
+  }
+  .P2flex .p2box1 img, .P2flex .p2box2 img {
+    height: 100%;
+    width: 100%;
+  }
+  .P2flex .p2box1 .wrapp, .P2flex .p2box2 .wrapp {
+    font-size: 17px;
+    font-family: Helvetica;
+    color: #fff;
+    margin: -205px 15%;
+    width: 79%;
+  }
+  .p3box1 {
+    margin-left: 16%;
+    height: 45vh;
+    width: 62%;
+  }
+  .p3box1 .wrapp {
+    margin: -215px 10%;
+    font-size: 23px;
+    width: 74%;
+  }
+  .p3box1 .wrapp i {
+    height: 20px;
+    width: 30px;
+  }
+  .P4flex {
+    grid-template-columns: auto auto;
+    grid-template-rows: auto auto auto;
+    justify-content: space-evenly;
+    display: grid;
+    height: 140vh;
+    width: 100%;
+    align-items: flex-start;
+    margin-left: 0%;
+  }
+  .P4flex .p4box1, .P4flex .p4box2, .P4flex .p4box3, .P4flex .p4box4, .P4flex .p4box5 {
+    height: 39vh;
+    width: 96%;
+  }
+  .P4flex .p4box1 img, .P4flex .p4box2 img, .P4flex .p4box3 img, .P4flex .p4box4 img, .P4flex .p4box5 img {
+    height: 100%;
+    width: 100%;
+  }
+  .P4flex .p4box1 .wrapp, .P4flex .p4box2 .wrapp, .P4flex .p4box3 .wrapp, .P4flex .p4box4 .wrapp, .P4flex .p4box5 .wrapp {
+    margin: -205px 15%;
+    font-size: 18px;
+    width: 81%;
+  }
+}
+@media (min-width: 993px) and (max-width: 1200px) {
+  .Pflex {
+    justify-content: space-evenly;
+    height: 240vh;
+    width: 90%;
+    margin-left: 10%;
+  }
+  .Pflex .pbox1 img, .Pflex .pbox2 img, .Pflex .pbox3 img, .Pflex .pbox4 img, .Pflex .pbox5 img, .Pflex .pbox6 img, .Pflex .pbox7 img, .Pflex .pbox8 img, .Pflex .pbox9 img {
+    width: 100%;
+    height: 100%;
+  }
+  .Pflex .pbox1 .wrapp, .Pflex .pbox2 .wrapp, .Pflex .pbox3 .wrapp, .Pflex .pbox4 .wrapp, .Pflex .pbox5 .wrapp, .Pflex .pbox6 .wrapp, .Pflex .pbox7 .wrapp, .Pflex .pbox8 .wrapp, .Pflex .pbox9 .wrapp {
+    text-align: center;
+    margin: -55% 5%;
+    font-size: 18px;
+    width: 90%;
+  }
+  .P2flex {
+    height: 50vh;
+    width: 90%;
+    margin-left: 10%;
+  }
+  .P2flex .p2box1 img, .P2flex .p2box2 img {
+    height: 100%;
+    width: 100%;
+  }
+  .p3box1 {
+    margin-left: 16%;
+    height: 45vh;
+    width: 47%;
+  }
+  .p3box1 .wrapp {
+    margin: -45% 15%;
+    font-size: 23px;
+    width: 74%;
+  }
+  .P4flex {
+    margin-left: 10%;
+    height: 140vh;
+    width: 90%;
+  }
+  .P4flex .p4box1 img, .P4flex .p4box2 img, .P4flex .p4box3 img, .P4flex .p4box4 img, .P4flex .p4box5 img {
+    height: 100%;
+    width: 100%;
+  }
+  .P4flex .p4box1 .wrapp, .P4flex .p4box2 .wrapp, .P4flex .p4box3 .wrapp, .P4flex .p4box4 .wrapp, .P4flex .p4box5 .wrapp {
+    margin: -56% 0%;
+    font-size: 16px;
+    width: 90%;
+  }
+}
+@media (min-width: 1201px) and (max-width: 1496px) {
+  .Pflex {
+    margin-left: 10%;
+    height: 240vh;
+    width: 90%;
+  }
+  .P2flex {
+    margin-left: 10%;
+    display: grid;
+    height: 50vh;
+    width: 90%;
+  }
+  .p3box1 {
+    margin-left: 16%;
+    height: 45vh;
+    width: 462px;
+  }
+  .P4flex {
+    margin-left: 10%;
+    height: 140vh;
+    display: grid;
+    width: 90%;
+  }
+}/*# sourceMappingURL=portfolio.css.map */

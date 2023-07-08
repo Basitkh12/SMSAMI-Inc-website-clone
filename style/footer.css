@@ -1,0 +1,305 @@
+.talk {
+  text-align: center;
+}
+.talk #tk {
+  font-size: 110px;
+  line-height: 0;
+}
+.talk #para {
+  font-size: 17px;
+  font-family: Arial;
+  color: #999;
+}
+.talk #butt {
+  background-color: #FF9F00;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
+  border-radius: 60px;
+  border: none;
+  color: #fff;
+  height: 6vh;
+  width: 9%;
+}
+
+.footerimg {
+  height: 24vh;
+  width: 78%;
+  margin: 10% 0 0 11%;
+  background-image: url(../Images/foot.png);
+  background-repeat: no-repeat;
+  background-position: bottom;
+  background-size: 100%;
+}
+
+.footer {
+  padding: 40px;
+  display: flex;
+  margin: 0 50px;
+  align-items: center;
+  position: relative;
+  background-image: linear-gradient(to bottom right, #00aaff, #003480);
+  justify-content: space-evenly;
+  border-radius: 30px;
+}
+.footer .img {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.footer .img img {
+  width: 95%;
+}
+.footer .img .wrapper {
+  height: 20px;
+  width: 100px;
+}
+.footer .img .wrapper .fab, .footer .img .wrapper .fa {
+  padding-left: 10px;
+  color: #fff;
+}
+.footer .product, .footer .service, .footer .hiring, .footer .link {
+  height: 41vh;
+  width: 16%;
+}
+.footer .product h2, .footer .service h2, .footer .hiring h2, .footer .link h2 {
+  font-family: "Open Sans";
+  color: #fff;
+}
+.footer .product ul, .footer .service ul, .footer .hiring ul, .footer .link ul {
+  font-size: 16px;
+  font-family: Helvetica;
+  color: #fff;
+  margin: 0 0 0 -16%;
+  padding-top: 8%;
+}
+
+#endnote {
+  text-align: center;
+  margin-top: 50px;
+  font-size: 12px;
+}
+
+@media (min-width: 360px) and (max-width: 600px) {
+  .talk {
+    height: 31vh;
+    width: 100%;
+    margin: 0;
+  }
+  .talk #tk {
+    font-size: 60px;
+    text-align: center;
+  }
+  .talk #para {
+    font-size: 16px;
+    font-family: Arial;
+    color: #999;
+    margin: 0;
+    text-align: center;
+  }
+  .talk #butt {
+    background-color: #FF9F00;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
+    border-radius: 60px;
+    border: none;
+    margin: 3% 0 0 40%;
+    color: #fff;
+    height: 6vh;
+    width: 90px;
+  }
+  .footerimg {
+    background-image: url(../Images/foot.png);
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-size: 100%;
+    height: 10vh;
+    width: 100%;
+    margin: 10% 0 0 0;
+  }
+  .footer {
+    display: flex;
+    height: auto;
+    width: 100%;
+    left: 0;
+    background-image: linear-gradient(to bottom right, #00aaff, #003480);
+    justify-content: space-evenly;
+    flex-direction: column;
+    border-radius: 30px;
+    margin: 0%;
+  }
+  .footer .img {
+    height: auto;
+    width: 98%;
+  }
+  .footer .img img {
+    padding: 11% 0 0 21%;
+    width: 254px;
+  }
+  .footer .img .wrapper {
+    height: 25px;
+    width: 137px;
+    margin: 0 0 0 150px;
+  }
+  .footer .img .wrapper .fab, .footer .img .wrapper .fa {
+    font-size: 23px;
+    padding-left: 14px;
+    color: #fff;
+  }
+  .footer .product, .footer .service, .footer .hiring, .footer .link {
+    text-align: center;
+    height: auto;
+    width: 100%;
+  }
+  .footer .product h2, .footer .service h2, .footer .hiring h2, .footer .link h2 {
+    font-size: 30px;
+    font-family: "Open Sans";
+    color: #fff;
+    text-align: center;
+    padding: 5%;
+  }
+  .footer .product ul, .footer .service ul, .footer .hiring ul, .footer .link ul {
+    font-size: 16px;
+    font-family: "Arial";
+    color: #fff;
+    margin: 0;
+    text-align: center;
+    padding-top: 5%;
+  }
+}
+@media (min-width: 601px) and (max-width: 767px) {
+  .talk {
+    height: 37vh;
+    width: 61%;
+    margin: 4% 0 0 20%;
+  }
+  .talk #tk {
+    font-size: 58px;
+    text-align: center;
+  }
+  .talk #para {
+    font-size: 13px;
+    font-family: Helvetica;
+    color: #999;
+    margin: 5% -3%;
+    text-align: center;
+  }
+  .talk #butt {
+    background-color: #FF9F00;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
+    border-radius: 60px;
+    border: none;
+    margin-left: 40%;
+    color: #fff;
+    height: 6vh;
+    width: 25%;
+  }
+  .footerimg {
+    background-image: url(../Images/foot.png);
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-size: 100%;
+    height: 13vh;
+    width: 78%;
+    margin: 10% 0 0 11%;
+  }
+  .footer {
+    padding: 50px;
+    display: flex;
+    margin: 0 50px;
+    align-items: center;
+    position: relative;
+    background-image: linear-gradient(to bottom right, #00aaff, #003480);
+    justify-content: space-evenly;
+    border-radius: 30px;
+  }
+  .footer .img {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+  .footer .img img {
+    width: 95%;
+  }
+  .footer .img .wrapper {
+    height: 13px;
+    width: 100px;
+  }
+  .footer .img .wrapper .fab, .footer .img .wrapper .fa {
+    padding-left: 6px;
+    color: #fff;
+  }
+  .footer .product, .footer .service, .footer .hiring, .footer .link {
+    height: 35vh;
+    width: 18%;
+  }
+  .footer .product h2, .footer .service h2, .footer .hiring h2, .footer .link h2 {
+    font-size: 16px;
+    font-family: "Open Sans";
+    color: #fff;
+    padding-top: 17%;
+  }
+  .footer .product ul, .footer .service ul, .footer .hiring ul, .footer .link ul {
+    font-size: 12px;
+    font-family: "Arial";
+    color: #fff;
+    margin: 0 0 0 -33%;
+  }
+  #endnote {
+    text-align: center;
+    margin-top: 50px;
+    font-size: 12px;
+  }
+}
+@media (min-width: 767px) and (max-width: 992px) {
+  .talk {
+    height: 37vh;
+    width: 61%;
+    margin: 4% 0 0 20%;
+  }
+  .talk #tk {
+    font-size: 58px;
+    text-align: center;
+  }
+  .footer .product h2, .footer .service h2, .footer .hiring h2, .footer .link h2 {
+    font-size: 16px;
+    font-family: "Open Sans";
+    color: #fff;
+    padding-top: 17%;
+  }
+  .footer .product ul, .footer .service ul, .footer .hiring ul, .footer .link ul {
+    font-size: 12px;
+    font-family: Arial;
+    color: #fff;
+    margin: 0 0 0 -32%;
+  }
+  .footer .img .wrapper {
+    margin-left: 44px;
+    height: 13px;
+    width: 100px;
+  }
+}
+@media (min-width: 993px) and (max-width: 1200px) {
+  .talk {
+    height: 37vh;
+    width: 61%;
+    margin: 4% 0 0 20%;
+  }
+  .talk #tk {
+    font-size: 63px;
+    text-align: center;
+  }
+  .footer .product ul, .footer .service ul, .footer .hiring ul, .footer .link ul {
+    margin-left: -25%;
+  }
+  .footer .product h2, .footer .service h2, .footer .hiring h2, .footer .link h2 {
+    font-size: 18px;
+  }
+}
+@media (min-width: 1201px) and (max-width: 1496px) {
+  .talk {
+    text-align: center;
+    height: 43vh;
+    width: 54%;
+  }
+  .talk #butt {
+    margin-left: 0%;
+  }
+}/*# sourceMappingURL=footer.css.map */

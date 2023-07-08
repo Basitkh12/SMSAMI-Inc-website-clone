@@ -1,0 +1,487 @@
+.servicediv1 {
+  height: 85vh;
+  width: 100%;
+  margin: none;
+  padding: none;
+  background-image: url(../Images/servicesb1.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 98%;
+}
+.servicediv1 .servicetext {
+  height: 68vh;
+  width: 55%;
+  margin: none;
+  padding: none;
+}
+.servicediv1 .servicetext h1 {
+  font-size: 95px;
+  font-family: Helvetica;
+  color: #000;
+  margin: 0% 26%;
+  line-height: 1em;
+  padding-top: 18%;
+}
+.servicediv1 .servicecpara {
+  font-size: 16px;
+  font-family: Arial;
+  color: #999;
+  margin: -17% 14%;
+  text-align: justify;
+  font-style: normal;
+  font-weight: 400;
+  width: 33%;
+}
+
+.offer {
+  height: 23vh;
+  width: 100%;
+  margin: 5% 0%;
+  padding: none;
+}
+.offer h1 {
+  font-size: 70px;
+  font-family: Helvetica;
+  color: #000;
+  margin: -4% 0%;
+  text-align: center;
+}
+.offer img {
+  height: 14vh;
+  width: none;
+  margin: 0% 0% 0% 26%;
+  padding: none;
+}
+
+.work {
+  display: flex;
+  width: 65%;
+  margin: auto;
+  flex-direction: column;
+}
+.work .work1, .work .work3, .work .work5 {
+  display: flex;
+}
+.work .work2, .work .work4, .work .work6 {
+  display: flex;
+  flex-direction: row-reverse;
+}
+.work .work1 img, .work .work3 img, .work .work5 img {
+  width: 180px;
+}
+.work .work1 .text, .work .work3 .text, .work .work5 .text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.work .work1 .text h1, .work .work3 .text h1, .work .work5 .text h1 {
+  font-size: 24px;
+  font-family: Helvetica;
+  color: #000;
+}
+.work .work1 .text p, .work .work3 .text p, .work .work5 .text p {
+  font-size: 16px;
+  font-family: Arial;
+  color: #999;
+  line-height: 1.5;
+}
+.work .work2 img, .work .work4 img, .work .work6 img {
+  width: 180px;
+}
+.work .work2 .text2, .work .work4 .text2, .work .work6 .text2 {
+  flex-direction: column;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+}
+.work .work2 .text2 h1, .work .work4 .text2 h1, .work .work6 .text2 h1 {
+  font-size: 24px;
+  font-family: Helvetica;
+  color: #000;
+}
+.work .work2 .text2 p, .work .work4 .text2 p, .work .work6 .text2 p {
+  font-size: 16px;
+  font-family: Arial;
+  color: #999;
+  line-height: 1.5;
+  text-align: right;
+}
+
+/* RESPONSIVENESS*/
+@media (min-width: 360px) and (max-width: 600px) {
+  .servicediv1 {
+    background-image: url(../Images/servicesb1.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 98%;
+    height: 70vh;
+    width: 100%;
+  }
+  .servicediv1 .servicetext {
+    height: 68vh;
+    width: 89%;
+  }
+  .servicediv1 .servicetext h1 {
+    font-size: 70px;
+    font-family: Helvetica;
+    margin: 9% 5%;
+    line-height: 1em;
+  }
+  .servicediv1 .servicecpara {
+    font-size: 15px;
+    font-family: Arial;
+    color: #999;
+    margin: -260px 0 0 4%;
+    text-align: justify;
+    font-style: normal;
+    font-weight: 400;
+    width: 76%;
+  }
+  .offer {
+    height: 12vh;
+    width: 100%;
+    margin: 5% 0 0 0;
+  }
+  .offer img {
+    height: 40px;
+    width: 40px;
+    margin: 0 0 0 18%;
+  }
+  .offer h1 {
+    font-size: 35px;
+    font-family: Helvetica;
+    color: #000;
+    margin: -4% 0 0 0;
+    text-align: center;
+  }
+  .work .work1, .work .work3, .work .work5 {
+    height: 35vh;
+    width: 100%;
+  }
+  .work .work1 img, .work .work3 img, .work .work5 img {
+    height: 130px;
+    width: 130px;
+    margin: -20px -27px;
+  }
+  .work .work1 h1, .work .work3 h1, .work .work5 h1 {
+    font-size: 23px;
+    font-family: Helvetica;
+    color: #000;
+    margin: -72px 79px;
+  }
+  .work .work1 p, .work .work3 p, .work .work5 p {
+    font-size: 14px;
+    font-family: Sans-serif;
+    color: #999;
+    margin: 107px 1%;
+    line-height: 1.5;
+  }
+  .work .work2, .work .work4, .work .work6 {
+    height: auto;
+    width: 100%;
+  }
+  .work .work2 img, .work .work4 img, .work .work6 img {
+    height: 130px;
+    width: 130px;
+    margin: -33px 0% 0% 72%;
+  }
+  .work .work2 h1, .work .work4 h1, .work .work6 h1 {
+    font-size: 23px;
+    font-family: Montserrat;
+    color: #000;
+    margin: -93px 128px;
+    text-align: right;
+  }
+  .work .work2 p, .work .work4 p, .work .work6 p {
+    font-size: 14px;
+    font-family: Arial;
+    color: #999;
+    margin: 125px 0%;
+    text-align: right;
+    line-height: 1.5;
+    height: 9vh;
+    width: 99%;
+  }
+}
+@media (min-width: 601px) and (max-width: 767px) {
+  .servicediv1 {
+    background-image: url(../Images/servicesb1.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 98%;
+    height: 55vh;
+    width: 100%;
+  }
+  .servicediv1 .servicetext {
+    height: 54vh;
+    width: 55%;
+  }
+  .servicediv1 .servicetext h1 {
+    font-size: 49px;
+    font-family: Helvetica;
+    color: #000;
+    margin: 9% 26%;
+    line-height: 1em;
+  }
+  .servicediv1 .servicecpara {
+    font-size: 12px;
+    font-family: Arial;
+    color: #999;
+    margin: -200px 0 0 14%;
+    text-align: justify;
+    font-style: normal;
+    font-weight: 400;
+    width: 39%;
+  }
+  .offer {
+    height: 12vh;
+    width: 100%;
+    margin: 5% 0 0 0;
+  }
+  .offer h1 {
+    font-size: 27px;
+    font-family: Helvetica;
+    color: #000;
+    margin: -5% 0 0 0;
+    text-align: center;
+  }
+  .offer img {
+    margin-left: 25%;
+    height: 9vh;
+  }
+  .work {
+    flex-direction: column;
+    align-items: center;
+    display: flex;
+  }
+  .work .work1, .work .work3, .work .work5 {
+    height: 27vh;
+    width: 95%;
+  }
+  .work .work1 img, .work .work3 img, .work .work5 img {
+    height: 120px;
+    width: 120px;
+    margin: 0% -2%;
+  }
+  .work .work1 h1, .work .work3 h1, .work .work5 h1 {
+    font-size: 18px;
+    font-family: Helvetica;
+    color: #000;
+    margin: -16% 20%;
+  }
+  .work .work1 p, .work .work3 p, .work .work5 p {
+    font-size: 13px;
+    font-family: Arial;
+    color: #999;
+    margin: 19% 20%;
+    line-height: 1.5;
+  }
+  .work .work2, .work .work4, .work .work6 {
+    height: 27vh;
+    width: 95%;
+  }
+  .work .work2 img, .work .work4 img, .work .work6 img {
+    height: 120px;
+    width: 120px;
+    margin: -1% 0% 0% 79%;
+  }
+  .work .work2 h1, .work .work4 h1, .work .work6 h1 {
+    font-size: 18px;
+    font-family: Helvetica;
+    color: #000;
+    margin: -16% 27%;
+    text-align: right;
+  }
+  .work .work2 p, .work .work4 p, .work .work6 p {
+    font-size: 13px;
+    font-family: Arial;
+    color: #999;
+    margin: 17% 0%;
+    text-align: right;
+    line-height: 1.5;
+    height: 9vh;
+    width: 76%;
+  }
+}
+@media (min-width: 767px) and (max-width: 992px) {
+  .servicediv1 {
+    background-image: url(../Images/servicesb1.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 98%;
+    height: 55vh;
+    width: 100%;
+  }
+  .servicediv1 .servicetext {
+    height: 54vh;
+    width: 55%;
+  }
+  .servicediv1 .servicetext h1 {
+    font-size: 54px;
+    font-family: Helvetica;
+    color: #000;
+    margin: 25px 26%;
+    line-height: 1em;
+  }
+  .servicediv1 .servicecpara {
+    font-size: 13px;
+    font-family: Arial;
+    color: #999;
+    margin: -185px 0 0 14%;
+    text-align: justify;
+    font-style: normal;
+    font-weight: 400;
+    width: 39%;
+  }
+  .offer {
+    height: 12vh;
+    width: 100%;
+    margin: 5% 0 0 0;
+  }
+  .offer h1 {
+    font-size: 31px;
+    font-family: Helvetica;
+    color: #000;
+    margin: -5% 0 0 0;
+    text-align: center;
+  }
+  .offer img {
+    margin-left: 25%;
+    height: 10vh;
+  }
+  .work {
+    flex-direction: column;
+    align-items: center;
+    display: flex;
+  }
+  .work .work1, .work .work3, .work .work5 {
+    height: 27vh;
+    width: 95%;
+  }
+  .work .work1 img, .work .work3 img, .work .work5 img {
+    height: 150px;
+    width: 150px;
+    margin: 0% -2%;
+  }
+  .work .work1 h1, .work .work3 h1, .work .work5 h1 {
+    font-size: 19px;
+    font-family: Helvetica;
+    color: #000;
+    margin: -15% 17%;
+  }
+  .work .work1 p, .work .work3 p, .work .work5 p {
+    font-size: 13px;
+    font-family: Arial;
+    color: #999;
+    margin: 17% 17%;
+    line-height: 1.5;
+  }
+  .work .work2, .work .work4, .work .work6 {
+    height: 27vh;
+    width: 95%;
+  }
+  .work .work2 img, .work .work4 img, .work .work6 img {
+    height: 150px;
+    width: 150px;
+    margin: -1% 0% 0% 79%;
+  }
+  .work .work2 h1, .work .work4 h1, .work .work6 h1 {
+    font-size: 19px;
+    font-family: Helvetica;
+    color: #000;
+    margin: -15% 21%;
+    text-align: right;
+  }
+  .work .work2 p, .work .work4 p, .work .work6 p {
+    font-size: 13px;
+    font-family: Arial;
+    color: #999;
+    margin: 17% 3%;
+    text-align: right;
+    line-height: 1.5;
+    height: 9vh;
+    width: 76%;
+  }
+}
+@media (min-width: 993px) and (max-width: 1200px) {
+  .servicediv1 {
+    background-size: 98%;
+    height: 64vh;
+    width: 100%;
+  }
+  .servicediv1 .servicetext {
+    height: 63vh;
+    width: 55%;
+  }
+  .servicediv1 .servicetext h1 {
+    padding-top: 0;
+    margin: 103px 26%;
+    font-size: 60px;
+  }
+  .servicediv1 .servicecpara {
+    margin: -217px 0 0 14%;
+    font-size: 14px;
+    width: 39%;
+  }
+  .offer h1 {
+    text-align: center;
+    font-size: 45px;
+    margin-top: -5%;
+  }
+  .work .work1, .work .work2, .work .work3, .work .work4, .work .work5, .work .work6 {
+    height: 35vh;
+    width: 95%;
+  }
+  .work .work1 img, .work .work3 img, .work .work5 img {
+    height: 170px;
+    width: 170px;
+    margin: 0% -2%;
+  }
+  .work .work2 img, .work .work4 img, .work .work6 img {
+    height: 170px;
+    width: 170px;
+    margin: -1% 0% 0% 79%;
+  }
+  .work .work1 h1, .work .work3 h1, .work .work5 h1 {
+    margin: -124px 17%;
+  }
+  .work .work1 p, .work .work3 p, .work .work5 p {
+    margin: 140px 17%;
+  }
+  .work .work2 h1, .work .work4 h1, .work .work6 h1 {
+    text-align: right;
+    margin: -126px 24%;
+  }
+  .work .work2 p, .work .work4 p, .work .work6 p {
+    text-align: right;
+    margin: 146px 0%;
+    height: 9vh;
+    width: 76%;
+  }
+}
+@media (min-width: 1201px) and (max-width: 1496px) {
+  .servicediv1 .servicecpara {
+    margin: -207px 0 0 14%;
+    width: 33%;
+  }
+  .offer img {
+    margin-left: 21%;
+  }
+  .work .work1, .work .work3, .work .work5, .work .work2, .work .work4, .work .work6 {
+    height: 35vh;
+    width: 86%;
+  }
+  .work .work1 h1, .work .work3 h1, .work .work5 h1 {
+    margin: -141px 20%;
+  }
+  .work .work2 h1, .work .work4 h1, .work .work6 h1 {
+    margin: -128px 36%;
+    font-size: 24px;
+  }
+  .work .work2 p, .work .work4 p, .work .work6 p {
+    margin: 147px 5%;
+  }
+  .work .work1 p, .work .work3 p, .work .work5 p {
+    margin: 159px 20%;
+  }
+}/*# sourceMappingURL=services.css.map */

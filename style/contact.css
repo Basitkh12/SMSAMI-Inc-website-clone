@@ -1,0 +1,485 @@
+.contactc {
+  height: 140vh;
+  width: 100%;
+  background-image: url(../Images/contactb1.png);
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+.contactc .Ctalk {
+  height: 30vh;
+  width: 80%;
+  margin: 1% 10%;
+}
+.contactc .Ctalk h1 {
+  font-size: 90px;
+  font-family: Montserrat;
+  color: #000;
+  text-align: center;
+  font-weight: 700;
+}
+.contactc .Ctalk p {
+  font-size: 17px;
+  font-family: Arial;
+  color: #999;
+  margin: -3% 0%;
+  letter-spacing: 0px;
+  text-align: center;
+  font-weight: 400;
+  line-height: 1.5;
+}
+.contactc .form {
+  background-color: #fff;
+  border-radius: 15px;
+  padding: 40px;
+  border: 1px solid #0083d1;
+  height: 67vh;
+  width: 30%;
+  margin: 78px auto;
+}
+.contactc .form h1 {
+  font-size: 26px;
+  font-family: Helvetica;
+  color: #000;
+  text-align: center;
+  font-weight: 700;
+}
+.contactc .form #name, .contactc .form #email, .contactc .form #subject {
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  padding: 18px 7px;
+  margin: 8px 0;
+  width: 88%;
+}
+.contactc .form #message {
+  border: 1px solid #ccc;
+  text-align: left;
+  height: 20vh;
+  width: 90%;
+}
+.contactc .form #submit {
+  box-shadow: 0 5px 25px rgba(0, 0, 0, 0.2);
+  padding: 12px 55px;
+  font-size: 12px;
+  height: 47px;
+  margin: 12% 32%;
+  text-transform: uppercase;
+  border-color: #fff;
+  line-height: 44px;
+  font-weight: 700;
+  color: #000;
+}
+.contactc .form #submit:hover {
+  background-color: #b08d58;
+  border-color: #b08d58;
+  color: #fff;
+}
+
+.cboxes {
+  grid-template-columns: 50% 50%;
+  grid-template-rows: 50% 50%;
+  display: grid;
+  width: 80%;
+  margin-left: 10%;
+  margin-top: -7%;
+}
+.cboxes .cbox1 {
+  background-color: #fff;
+  box-shadow: 0 0 30px 0 rgba(0, 120, 4, 0.1803921569);
+  border-radius: 20px;
+  border: 1px solid #007804;
+  height: 30vh;
+  width: 75%;
+  margin: 18% 10%;
+}
+.cboxes .cbox2 {
+  background-color: #fff;
+  box-shadow: 0 0 30px 0 rgba(255, 159, 0, 0.1803921569);
+  border-radius: 20px;
+  border: 1px solid #FF9F00;
+  height: 30vh;
+  width: 75%;
+  margin: 18%;
+}
+.cboxes .cbox3 {
+  background-color: #fff;
+  box-shadow: 0 0 30px 0 rgba(255, 0, 0, 0.1803921569);
+  border-radius: 20px;
+  border: 1px solid #ff0000;
+  height: 30vh;
+  width: 75%;
+  margin: 9% 9%;
+}
+.cboxes .cbox1 #s, .cboxes .cbox2 #s, .cboxes .cbox3 #s {
+  font-size: 16px;
+  font-family: Arial;
+  color: #666;
+  padding: 3% 9%;
+  line-height: 1.5;
+  font-weight: 400;
+}
+.cboxes .cbox1 h2, .cboxes .cbox2 h2, .cboxes .cbox3 h2 {
+  font-size: 18px;
+  font-family: sans-serif;
+  color: #000;
+  padding: 3% 9%;
+  line-height: 1.28;
+  font-weight: 700;
+}
+
+.media {
+  text-align: center;
+}
+.media h1 {
+  font-family: sans-serif;
+  font-size: 24px;
+}
+.media .fas, .media .fab, .media .fa-brands {
+  padding-left: 2%;
+  font-size: 30px;
+  color: #000;
+}
+
+/* RESPONSIVENESS*/
+@media (min-width: 360px) and (max-width: 600px) {
+  .contactc .Ctalk {
+    height: 26vh;
+    width: 89%;
+    margin: 1% 5%;
+  }
+  .contactc .Ctalk h1 {
+    font-size: 50px;
+    font-family: Helvetica;
+    color: #000;
+    text-align: center;
+    font-weight: 700;
+  }
+  .contactc .Ctalk p {
+    font-size: 14px;
+    font-family: Arial;
+    color: #999;
+    margin: -5% 0 0 0;
+    letter-spacing: 0px;
+    text-align: center;
+    font-weight: 400;
+    line-height: 1.5;
+  }
+  .contactc .form {
+    background-color: #fff;
+    border-radius: 15px;
+    padding: 40px;
+    border: 1px solid #0083d1;
+    margin: 50px auto;
+    height: 74vh;
+    width: 73%;
+  }
+  .contactc .form #submit:hover {
+    background-color: #b08d58;
+    border-color: #b08d58;
+    color: #fff;
+  }
+  .cboxes {
+    grid-template-columns: auto;
+    grid-template-rows: auto auto auto;
+    display: grid;
+    height: 119vh;
+    width: 100%;
+    margin: 60px 0 0 0%;
+  }
+  .cboxes .cbox1 {
+    background-color: #fff;
+    box-shadow: 0 0 30px 0 rgba(0, 120, 4, 0.1803921569);
+    border-radius: 20px;
+    border: 1px solid #007804;
+    margin: 6% 10%;
+    height: 29vh;
+    width: 75%;
+  }
+  .cboxes .cbox2 {
+    background-color: #fff;
+    box-shadow: 0 0 30px 0 rgba(255, 159, 0, 0.1803921569);
+    border-radius: 20px;
+    border: 1px solid #FF9F00;
+    margin: -165px 10%;
+    height: 29vh;
+    width: 75%;
+  }
+  .cboxes .cbox3 {
+    background-color: #fff;
+    box-shadow: 0 0 30px 0 rgba(255, 0, 0, 0.1803921569);
+    border-radius: 20px;
+    border: 1px solid #ff0000;
+    margin: -93px 10%;
+    height: 29vh;
+    width: 75%;
+  }
+  .cboxes .cbox1 h2, .cboxes .cbox2 h2, .cboxes .cbox3 h2 {
+    font-size: 18px;
+    font-family: Helvetica;
+    color: #000;
+    margin: 27px 29px;
+    line-height: 1.28;
+    font-weight: 700;
+  }
+  .cboxes .cbox1 #s, .cboxes .cbox2 #s, .cboxes .cbox3 #s {
+    font-size: 15px;
+    font-family: Arial;
+    color: #666;
+    margin: 10px 0 0 20px;
+    line-height: 1.5;
+    font-weight: 400;
+  }
+  .media {
+    height: 13vh;
+    width: 99%;
+    margin: 4% 2%;
+  }
+  .media .iconwrapper {
+    margin: -2% 36%;
+    width: 40%;
+  }
+}
+@media (min-width: 601px) and (max-width: 767px) {
+  .contactc {
+    background-image: url(../Images/contactb1.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    height: 125vh;
+    width: 100%;
+  }
+  .contactc .Ctalk {
+    height: 30vh;
+    width: 80%;
+    margin: 1% 10%;
+    padding: 0;
+  }
+  .contactc .Ctalk h1 {
+    font-size: 52px;
+    font-family: Helvetica;
+    color: #000;
+    text-align: center;
+    font-weight: 700;
+  }
+  .contactc .Ctalk p {
+    font-size: 14px;
+    font-family: Arial;
+    color: #999;
+    margin: -3% 0 0 0;
+    letter-spacing: 0px;
+    text-align: center;
+    font-weight: 400;
+    line-height: 1.5;
+  }
+  .contactc .form {
+    background-color: #fff;
+    border-radius: 15px;
+    padding: 40px;
+    border: 1px solid #0083d1;
+    margin: 51px auto;
+    height: 70vh;
+    width: 48%;
+  }
+  .contactc .form h1 {
+    font-size: 24px;
+    font-family: Helvetica;
+    color: #000;
+    text-align: center;
+  }
+  .contactc .form #name, .contactc .form #email, .contactc .form #subject {
+    border-radius: 4px;
+    padding: 18px 7px;
+    border: 1px solid #ccc;
+    margin: 8px 0;
+    width: 88%;
+  }
+  .contactc .form #message {
+    border-radius: 4px;
+    padding: 18px 7px;
+    border: 1px solid #ccc;
+    text-align: left;
+    height: 20vh;
+    width: 90%;
+  }
+  .contactc .form #submit {
+    box-shadow: 0 5px 25px rgba(0, 0, 0, 0.2);
+    padding: 12px 55px;
+    font-size: 12px;
+    text-transform: uppercase;
+    border-color: #fff;
+    line-height: 44px;
+    font-weight: 700;
+    margin: 3% 19%;
+    height: 47px;
+    color: #000;
+  }
+  .contactc .form #submit:hover {
+    background-color: #b08d58;
+    border-color: #b08d58;
+    color: #fff;
+  }
+  .cboxes {
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 50% 50%;
+    display: grid;
+    height: 104vh;
+    width: 100%;
+    margin-left: 0px;
+    margin-top: 60px;
+  }
+  .cboxes .cbox1 {
+    background-color: #fff;
+    box-shadow: 0 0 30px 0 rgba(0, 120, 4, 0.1803921569);
+    border-radius: 20px;
+    border: 1px solid #007804;
+    margin: 18% 3%;
+    height: 48%;
+    width: 90%;
+  }
+  .cboxes .cbox2 {
+    background-color: #fff;
+    box-shadow: 0 0 30px 0 rgba(255, 159, 0, 0.1803921569);
+    border-radius: 20px;
+    border: 1px solid #FF9F00;
+    margin: 16% 7%;
+    height: 50%;
+    width: 90%;
+  }
+  .cboxes .cbox3 {
+    background-color: #fff;
+    box-shadow: 0 0 30px 0 rgba(255, 0, 0, 0.1803921569);
+    border-radius: 20px;
+    border: 1px solid #ff0000;
+    margin: -15% 3%;
+    height: 50%;
+    width: 90%;
+  }
+  .cboxes .cbox1 h2, .cboxes .cbox2 h2, .cboxes .cbox3 h2 {
+    font-size: 15px;
+    font-family: Helvetica;
+    color: #000;
+    margin: 27px 29px;
+    line-height: 1.28;
+    font-weight: 700;
+  }
+  .cboxes .cbox1 #s, .cboxes .cbox2 #s, .cboxes .cbox3 #s {
+    font-size: 13px;
+    font-family: Arial;
+    color: #999;
+    margin: 10px 0 0 20px;
+    line-height: 1.5;
+    font-weight: 400;
+  }
+  .media {
+    height: 13vh;
+    width: 63%;
+    margin: 1% 19%;
+  }
+  .media .iconwrapper {
+    margin: -4% 23%;
+    width: 40%;
+  }
+}
+@media (min-width: 767px) and (max-width: 992px) {
+  .contactc {
+    height: 125vh;
+    width: 100%;
+  }
+  .contactc .Ctalk {
+    height: 30vh;
+    width: 80%;
+    margin: 1% 10%;
+  }
+  .contactc .Ctalk h1 {
+    font-size: 52px;
+  }
+  .contactc .Ctalk p {
+    font-size: 14px;
+  }
+  .contactc .form {
+    margin: 46px auto;
+    height: 72vh;
+    width: 48%;
+  }
+  .cboxes {
+    margin-top: 60px;
+    height: 104vh;
+    width: 100%;
+  }
+  .cboxes .cbox1 {
+    margin: 18% 3%;
+    height: 55%;
+    width: 90%;
+  }
+  .cboxes .cbox2 {
+    margin: 16% 7%;
+    height: 55%;
+    width: 90%;
+  }
+  .cboxes .cbox3 {
+    margin: -2% 3%;
+    height: 55%;
+    width: 90%;
+  }
+  .cboxes .cbox1 h2, .cboxes .cbox2 h2, .cboxes .cbox3 h2 {
+    font-size: 20px;
+  }
+  .cboxes .cbox1 #s, .cboxes .cbox2 #s, .cboxes .cbox3 #s {
+    font-size: 16px;
+    color: #666;
+  }
+  .media {
+    margin: 1% 19%;
+    height: 15vh;
+    width: 63%;
+  }
+  .media h1 {
+    font-size: 26px;
+  }
+}
+@media (min-width: 993px) and (max-width: 1200px) {
+  .contactc .Ctalk h1 {
+    font-size: 65px;
+  }
+  .contactc .form {
+    height: 75vh;
+    width: 48%;
+  }
+  .cboxes {
+    margin-left: 0px;
+    margin-top: 60px;
+    display: grid;
+    height: 104vh;
+    width: 100%;
+  }
+  .cboxes .cbox1, .cboxes .cbox2, .cboxes .cbox3 {
+    height: 35vh;
+  }
+  .cboxes .cbox1 #s, .cboxes .cbox2 #s, .cboxes .cbox3 #s {
+    color: #999;
+  }
+  .media {
+    margin: 1% 25%;
+    height: 17vh;
+    width: 50%;
+  }
+}
+@media (min-width: 1201px) and (max-width: 1496px) {
+  .contactc .Ctalk {
+    height: 35vh;
+  }
+  .contactc .Ctalk h1 {
+    font-size: 80px;
+  }
+  .contactc .form {
+    height: 71vh;
+  }
+  .cboxes {
+    margin: 0;
+    height: 122vh;
+    width: 100%;
+  }
+  .media {
+    margin: 1% 30%;
+    height: 16vh;
+    width: 35%;
+  }
+}/*# sourceMappingURL=contact.css.map */

@@ -1,0 +1,54 @@
+@mixin boxes( $height,$width,$margins,$padding)
+{
+    height: $height;
+    width: $width;
+    margin: $margins;
+    padding: $padding;
+}
+
+@mixin h1s ( $fontsize, $fontfamily, $fontcolor, $margins)
+{
+    font-size: $fontsize;
+    font-family: $fontfamily;
+    color: $fontcolor;
+    margin: $margins;
+}
+
+@mixin buttons($backcolor, $shadow, $bradius, $paddng, $fsize, $brder )
+{
+    background-color: $backcolor;
+    box-shadow: $shadow;
+    border-radius: $bradius;
+    padding: $paddng;
+    font-size: $fsize;
+    border: $brder;
+}
+
+@mixin images($height, $width, $margin, $padding)
+{
+    height: $height;
+    width: $width;
+    margin: $margin;
+    padding: $padding;
+    
+}
+
+@mixin grid($columns, $rows, $justify, $display, $height, $width)
+{
+    grid-template-columns: $columns;
+    grid-template-rows: $rows;
+    justify-content: $justify;
+    display: $display;
+    height: $height;
+    width: $width;
+}
+@mixin flex($height, $width, $left, $right,$top, $display, $position )
+{
+    display: $display;
+    height: $height;
+    width: $width;
+    left: $left;
+    right: $right;
+    top: $top;
+    position: $position;
+}

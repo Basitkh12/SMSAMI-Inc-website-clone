@@ -1,0 +1,648 @@
+@import 'properties';
+@import 'style';
+
+//Portfolio css
+.Pimg{
+    background-image: url(../Images/portfoliob1.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 21vh;
+    margin-top: -24px;
+}
+.Pimg .bckcolor
+{
+    @include boxes( 21vh,100%, null ,null);
+    background-color: $rgb2;
+    z-index: 1;
+    h2{
+        text-align: center;
+        color: $basic-color;
+        font-size: 31px;
+        padding-top: 3%;
+    }
+}
+.Pshead
+{
+    border-bottom: 1px solid $border-color;
+    border-top: 1px solid $border-color;  
+    line-height: 2;
+    margin: 4% 12%;
+
+    a{
+       @include  h1s ( 16px, Arial, $sub-heading, null);
+        text-decoration-line: none;
+        padding: 15px;
+        &:hover{
+            color: $royal-blue;
+           }
+    }
+     #prfh,  #des,  #mble, #prf-h, #web-p
+    {
+    border-top: 3px solid $royal-blue;
+    padding-top: 8px;
+    color: $royal-blue;
+    }
+}
+.Pflex
+{
+    grid-template-columns: auto auto;
+    grid-template-rows: auto auto auto auto auto;
+    justify-content: space-evenly;
+    display: grid;
+    height: auto;
+    width: 70%;
+    margin-left: 15%;
+    .pbox1 , .pbox2,  .pbox3 , .pbox4, .pbox5 , .pbox6 , .pbox7,  .pbox8, .pbox9
+  {
+    position: relative;
+    margin-top: 30px;
+
+   .wrapp
+   {
+    position: absolute;
+    height: 26vh;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    text-align: center;
+    h2{
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 35px;
+        color: $basic-color;
+
+    }
+    h4
+    {
+       @include  h1s ( 11px, Arial, $basic-color, null);
+    }
+   }
+    i{
+        font-size: 18px;
+        color: #55C0E9;
+        padding: 3% 2%;
+        background-color: #fff;
+        border-radius: 50%;
+    }
+    a{
+        text-decoration-line: none;
+    }
+   }
+}
+            /* PORTFOLIO Design PAGE CSS*/
+.P2flex
+{
+   @include grid(auto auto, auto, space-evenly, grid, 50vh, 70%);
+    align-items: flex-start;
+    margin-left: 15%;
+
+    .p2box1 , .p2box2
+    {
+        position: relative;
+        .wrapp
+        {
+            position: absolute;
+    height: 26vh;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    text-align: center;
+    h2{
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 35px;
+        color: $basic-color;
+
+    }
+
+           h4{
+            font-family: "Open Sans", Arial, Helvetica, sans-serif;
+            font-size: 11px;
+            color: $basic-color;
+           }
+           i{
+            font-size: 18px;
+            color: #55C0E9;
+            padding: 3% 2%;
+            background-color: #fff;
+            border-radius: 50%;
+           }
+        }
+        a{
+            text-decoration-line: none;
+        }
+    }
+}
+            /* PORTFOLIO Mobile PAGE CSS*/
+.p3box1
+{
+    position: relative;
+    display: flex;
+    justify-content: center;
+
+
+  .wrapp
+  {
+    position: absolute;
+    height: 26vh;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    text-align: center;
+
+    h2{
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 35px;
+        color: $basic-color;
+    }
+    h4{
+        font-family: "Open Sans", Arial, Helvetica, sans-serif;
+        color: $basic-color;
+        font-size: 11px;
+    }
+    i{
+        font-size: 18px;
+        color: #55C0E9;
+        padding: 1% 1%;
+        background-color: #fff;
+        border-radius: 50%;
+    }
+  }
+   a{
+    text-decoration-line: none;
+   }
+}
+         /* PORTFOLIO Portfolio-Home PAGE CSS*/
+.P4flex
+{
+   @include grid(auto auto,  auto auto auto, space-evenly, grid, 140vh, 70%);
+    align-items: flex-start;
+    margin-left: 15%;
+
+    .p4box1 ,.p4box2,.p4box3 , .p4box4, .p4box5
+    {
+        position: relative;
+    margin-top: 30px;
+
+        .wrapp{
+            position: absolute;
+            height: 26vh;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            margin: auto;
+            text-align: center;
+            h2{
+                font-family: Arial, Helvetica, sans-serif;
+                font-size: 35px;
+                color: $basic-color;
+            }
+
+                 h4{
+                    font-family: "Open Sans", Arial, Helvetica, sans-serif;
+                    color: $basic-color;
+                    font-size: 11px;
+                 }
+                 i{
+                    font-size: 18px;
+                    color: #55C0E9;
+                    padding: 3% 2%;
+                    background-color: #fff;
+                    border-radius: 50%;
+                 }
+        }
+        a{
+            text-decoration-line: none;
+        }
+    }
+}
+                    /* RESPONSIVENESS*/
+
+ @include on-xs-down
+ {
+    .Pshead 
+    {
+    border-bottom: 1px solid $border-color;
+    border-top: 1px solid $border-color;
+    line-height: 2;
+    margin: 4% 0%;
+    font-size: 11px;
+}
+.Pflex {
+    @include grid(98%, auto auto auto auto auto auto, null, grid, auto, 81%);
+    margin-left: 15%;
+    .pbox1, .pbox2,  .pbox3,  .pbox4,  .pbox5,  .pbox6,  .pbox7, .pbox8,  .pbox9
+  {
+    height: 39vh;
+    width:100%;
+    img, .p3box1 img,
+    .P4flex .p4box1 img, .P4flex .p4box2 img, .P4flex .p4box3 img,.P4flex .p4box4 img,.P4flex .p4box5 img
+     {
+        width: 100%;
+        height: 257px;
+    }
+    .wrapp{
+        @include h1s ( 13px, Helvetica, $basic-color, -223px 30%);
+         text-align: center;
+       line-height: 0;
+       border: 6px solid $darker;
+      width: 50%;
+      z-index: 1;
+      i{
+        @include buttons($basic-color, null, 59%, 3% 0 0 0, 18px, null );
+         text-align: center;
+        color: $curious-blue-hover;
+        height: 4vh;
+        width: 16%;
+      }
+    }
+}
+}
+.P2flex {
+    @include grid(auto, auto, space-evenly, grid, auto, 85%);
+    align-items: flex-start;
+    margin-left: 15%;
+    .p2box1, .p2box2 {
+        @include boxes( 39vh, 98%,2% 0%,null);
+       img {
+            width: 100%;
+            height: 257px;
+        }
+        .wrapp{
+            @include h1s ( 18px, Helvetica, $basic-color, -214px 15%);
+        text-align: center;
+        line-height: 0;
+        width: 74%;
+        z-index: 1;
+        }
+    }
+    
+}
+.p3box1 {
+    @include boxes( 39vh, 80%,0 0 0 15%,null);
+    img {
+        width: 100%;
+        height: 257px;
+    }
+    .wrapp {
+        @include h1s ( 20px, Helvetica, $basic-color, -236px 15%);
+        text-align: center;
+        line-height: 0;
+        width: 74%;
+        z-index: 1;
+    }
+}
+.P4flex {
+   @include  grid(auto, auto auto auto, space-evenly, grid, auto,  70%);
+    align-items: flex-start;
+    margin-left: 15%;
+    .p4box1 ,  .p4box2 ,  .p4box3 ,  .p4box4 ,  .p4box5 {
+    img {
+        width: 100%;
+        height: 257px;
+    }
+    .wrapp{
+        @include h1s ( 18px, Helvetica, $basic-color, -236px 15%);
+    text-align: center;
+    line-height: 0;
+    width: 74%;
+    z-index: 1;
+    }
+}
+}
+ }
+
+ @include on-sm-down{
+    .Pimg{
+        background-image: url(../Images/portfoliob1.jpg);
+        background-repeat: no-repeat;
+        background-position: center;
+        height: 21vh;
+        background-size: 150%;
+        .bckcolor
+{
+    background-color: $rgb2;
+    height: 21vh;
+    width: 100%; 
+    z-index: 1;
+}
+    }
+    .Pshead
+{
+    border-bottom: 1px solid $border-color;
+    border-top: 1px solid $border-color;  
+    line-height: 2;
+    margin: 4% 12%;
+    a
+{
+    @include h1s ( 15px, Arial, $sub-heading, null);
+    text-decoration-line: none;
+    padding: 15px;
+    &:hover
+    {
+        color: $royal-blue;
+    } 
+}
+#prfh,  #des,  #mble,  #prf-h,  #web-p
+{
+    border-top: 3px solid $royal-blue;
+    padding-top: 8px;
+    color: $royal-blue;
+}
+}
+.Pflex
+{
+    @include grid(auto auto, auto auto auto auto auto, space-evenly, grid, 240vh,  99%);
+    margin: 1%;
+    .pbox1 ,.pbox2, .pbox3 ,.pbox4,  .pbox5 , .pbox6 , .pbox7,  .pbox8, .pbox9
+{
+    height: 39vh;
+    width: 95%;
+    img{
+        width: 100%;
+    height: 100%;
+    }
+    .wrapp{
+        @include  h1s ( 16px, Helvetica, $basic-color,  -202px 13%);
+    text-align: center;
+    line-height: 0;
+    width: 90%;
+    z-index: 1;
+    h4{
+        font-family: "Open Sans", Arial, Helvetica, sans-serif;
+        font-size: 11px;
+    }
+
+    i{
+        @include buttons($basic-color, null, 62%,  3% 0 0 0, 18px, null );
+        text-align: center;
+        color: $curious-blue-hover;
+        height: 4vh;
+        width: 10%;
+    }
+}
+}
+}
+ /* PORTFOLIO Design PAGE CSS*/
+ .P2flex
+ {
+    @include grid(auto auto, auto, space-evenly, grid, 50vh, 99%);
+     margin-left: 1%;
+     .p2box1 ,.p2box2
+{
+    height: 39vh;
+    width: 96%;
+    img{
+        height: 100%;
+   width: 100%;
+    }
+    .wrapp{
+        @include h1s ( 17px, Helvetica, $basic-color, -200px 15%);
+    text-align: center;
+    line-height: 0;;
+    width: 79%;
+    z-index: 1;
+    h4{
+        font-family: "Open Sans", Arial, Helvetica, sans-serif;
+    font-size: 11px;
+
+    }
+    i{
+        @include buttons($basic-color, null, 62%,  3% 0 0 0, 18px, null );
+        text-align: center;
+        color: $curious-blue-hover;
+        height: 4vh;
+        width: 10%;
+    }
+    }
+}
+ }
+  /* PORTFOLIO Mobile PAGE CSS*/
+  .p3box1
+{
+    @include boxes( 45vh, 62%,0 0 0 16%,null);
+    img
+{
+    height: 100%;
+    width: 100%;
+
+}
+}
+            /* PORTFOLIO Portfolio-Home PAGE CSS*/ 
+.P4flex
+{ 
+    @include grid(auto auto, auto auto auto, space-evenly, grid, 140vh, 100%);
+        align-items: flex-start;
+         margin-left: 0%;
+
+.p4box1 , .p4box2, .p4box3 ,.p4box4,  .p4box5
+  {
+    height: 39vh;
+    width: 96%;
+    img{
+        height: 100%;
+   width: 100%;
+    }
+    .wrapp{
+        @include h1s ( 18px, Helvetica, $basic-color, -200px 15%);
+    text-align: center;
+    line-height: 0;
+    width: 81%;
+    z-index: 1;
+    h4{
+        font-family: "Open Sans", Arial, Helvetica, sans-serif;
+    font-size: 11px;
+    }
+    i{
+        @include buttons($basic-color, null, 62%,  3% 0 0 0, 18px, null );
+        text-align: center;
+        color: $curious-blue-hover;
+        height: 4vh;
+        width: 10%;
+    }
+    }
+   }  }
+ }
+ @include  on-md-down{
+    .Pflex
+{
+    @include grid( auto auto , auto auto auto auto auto, space-evenly, grid, 240vh, 99%);
+    margin-left: 1%;
+    .pbox1 , .pbox2,  .pbox3 ,.pbox4,  .pbox5 ,  .pbox6 ,  .pbox7, .pbox8, .pbox9
+{
+    height: 39vh;
+    width: 95%;
+    img{
+        width: 100%;
+    height: 100%;
+    }
+    .wrapp{
+        @include h1s ( 16px, Helvetica, $basic-color, -217px 13%);
+        text-align: center;
+        line-height: 0;
+        width: 90%;
+        z-index: 1;
+        h4{
+            font-family: "Open Sans", Arial, Helvetica, sans-serif;
+            font-size: 11px;
+        }
+        i{
+            @include buttons($basic-color, null, 62%, 3% 0 0 0, 18px, null );
+            text-align: center;
+            color: $curious-blue-hover;
+            height: 4vh;
+            width: 10%;
+        }
+    }
+}
+}
+.P2flex
+{
+    @include grid(auto auto, auto, space-evenly, grid, auto, 99%);
+    margin-left: 1%;
+    .p2box1 , .p2box2
+    {
+        height: 39vh;
+        width: 96%;
+        img{
+            height: 100%;
+            width: 100%;
+        }
+        .wrapp{
+            @include h1s ( 17px, Helvetica, $basic-color,  -205px 15%);
+            width: 79%;
+           
+        }
+    }
+}
+.p3box1
+{
+    margin-left: 16%;
+    height: 45vh;
+    width: 62%;
+    .wrapp
+
+{
+    margin: -215px 10%;
+    font-size: 23px;
+    width: 74%;
+    i{
+        height: 20px;
+         width: 30px;
+    }
+}
+}
+.P4flex
+{
+    @include grid(auto auto, auto auto auto, space-evenly, grid, 140vh, 100%);
+    align-items: flex-start;
+    margin-left: 0%;
+    .p4box1 , .p4box2, .p4box3 , .p4box4,.p4box5
+{
+    height: 39vh;
+    width: 96%;
+    img{
+        height: 100%;
+        width: 100%;
+    }
+    .wrapp{
+    margin: -205px 15%;
+    font-size: 18px;
+    width: 81%;
+    }
+}
+}
+ }
+ @include on-lg-down
+ {
+    .Pflex
+    {
+        justify-content: space-evenly;
+        height: 240vh;
+        width: 90%;
+        margin-left: 10%;
+ .pbox1  img,  .pbox2  img,  .pbox3  img, .pbox4  img,  .pbox5  img, .pbox6  img, .pbox7  img,  .pbox8  img, .pbox9  img
+        {
+            width: 100%;
+            height: 100%;
+        }
+ .pbox1 .wrapp, .pbox2 .wrapp, .pbox3 .wrapp, .pbox4 .wrapp, .pbox5 .wrapp, .pbox6 .wrapp, .pbox7 .wrapp, .pbox8 .wrapp, .pbox9 .wrapp 
+ {
+    text-align: center;
+    margin: -55% 5%;
+    font-size: 18px;
+    width: 90%;
+}
+}
+
+.P2flex {
+
+    height: 50vh;
+    width: 90%;
+    margin-left: 10%;
+ .p2box1 img , .p2box2 img
+{
+   height: 100%;
+   width: 100%;
+}
+}
+.p3box1
+{
+    margin-left: 16%;
+    height: 45vh;
+    width: 47%;
+    .wrapp
+{
+    margin: -45% 15%;
+    font-size: 23px;
+    width: 74%;
+}
+}
+.P4flex
+{
+    margin-left: 10%;
+    height: 140vh;
+    width: 90%;
+  .p4box1 img , .p4box2 img,  .p4box3 img, .p4box4 img, .p4box5 img
+{
+   height: 100%;
+   width: 100%;
+}
+ .p4box1 .wrapp,  .p4box2 .wrapp,  .p4box3 .wrapp,  .p4box4 .wrapp,.p4box5 .wrapp
+{
+    margin: -56% 0%;
+    font-size: 16px;
+    width: 90%;
+}
+}
+ }
+ @include on-exl-down{
+    .Pflex {
+        margin-left: 10%;
+        height: 240vh;
+        width: 90%;
+    }
+    .P2flex {
+   
+        margin-left: 10%;
+        display: grid;
+        height: 50vh;
+        width: 90%;
+    }
+    .p3box1 {
+        margin-left: 16%;
+        height: 45vh;
+        width: 462px;
+    }
+    .P4flex {
+        margin-left: 10%;
+        height: 140vh;
+        display: grid;
+        width: 90%;
+    }
+ }

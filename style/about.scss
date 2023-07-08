@@ -1,0 +1,400 @@
+@import 'properties';
+@import 'style';
+
+.aboutdiv1
+{
+    @include boxes( 85vh,100%,none,none);
+    background-image: url(../Images/aboutb1.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100%;
+
+    .abouttext
+{
+    @include boxes( 68vh,55%,none,none);
+
+    h1{
+        @include h1s ( 88px, Helvetica, $darker, none);
+    padding: 16% 25%;
+    }
+}
+.aboutcpara{
+    @include h1s ( 16px, sans-serif, $sub-heading, -17% 14%);
+    text-align: justify;
+    line-height: 1.5em;
+    width: 33%;
+}
+}
+#abh1{
+    @include h1s ( 85px, Arial, $darker, none);
+    text-align: center;
+}
+.abtgrid
+{
+    height: 64vh;
+    width: 73%;
+    left: 17%;
+    top: none;
+    position: relative;
+    .abtgrid1
+    {
+        display: flex;
+    width: 48%;
+    position: absolute;
+    }
+    .abtgrid2
+    {
+        display: flex;
+    height: 30vh;
+    width: 48%;
+    right: 0;
+    position: absolute;
+    }
+    .abtgrid3
+    {
+        display: flex;
+    height: 30vh;
+    width: 48%;
+    bottom: 0;
+    position: absolute;
+    }
+    .abtgrid4{
+        display: flex;
+    height: 30vh;
+    width: 48%;
+    right: 0;
+    bottom: 0;
+    position: absolute;
+    }
+    .abtgrid1 img,  .abtgrid2 img, .abtgrid3 img, .abtgrid4 img
+    {
+        height: 17vh;
+        box-shadow: 5px 10px 18px rgb(136 136 136 / 21%);
+        border-radius: 20px;
+    }
+     .abtgrid1  .gridtext, .abtgrid2 .gridtext,  .abtgrid3 .gridtext, .abtgrid4 .gridtext
+   {
+    margin-left: 30px;
+    h1{
+        font-size: 18px;
+    }
+    ul
+     {
+        font-size: 16px;
+        font-family: sans-serif;
+        color: #999;
+        padding: 0;
+        line-height: 1.5;
+        font-weight: 400;
+     }
+    }
+     
+}
+
+                            // Responsivness//
+@include on-xs-down
+{
+    .aboutdiv1 {
+        background-image: url(../Images/aboutb1.png);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: 100%;
+        height: 69vh;
+        width: 100%;
+        .abouttext 
+{
+    height: 68vh;
+    width: 86%;
+    h1 {
+        @include h1s ( 48px, Helvetica, $darker, 7% -9%);
+    } 
+}
+.aboutcpara {
+    @include h1s ( 15px, Arial, $sub-heading, -313px 3%);
+    text-align: justify;
+    line-height: 1.5em;
+    width: 83%;
+}
+}
+#abh1 {
+    font-family: Montserrat, Arial, Helvetica, sans-serif;
+    text-align: center;
+    font-size: 38px;
+}
+.abtgrid 
+{
+    @include flex(64vh, 100%, 0, null,null, flex, relative );
+    .abtgrid1
+    {
+        @include flex(32vh, 50%, null, null,null, flex, absolute );
+   }
+   .abtgrid2 
+{
+    @include flex(32vh,  49%, 51%, null,null, flex, absolute );
+}
+  .abtgrid3 
+{
+    @include flex(32vh, 49%, null, null,50%, flex, absolute );
+}
+.abtgrid4 
+{
+   @include flex(31vh, 48%, 51%, null,50%, flex, absolute );
+}
+.abtgrid1 img, .abtgrid2 img,  .abtgrid3 img,  .abtgrid4 img
+ {
+    box-shadow: $default-radius 10px 18px $light-darken;
+    border-radius: 20px;
+    border-radius: 15px;
+    height: 100px;
+    width: 160px;
+    margin: 3%;
+}
+
+ .abtgrid1 h1,  .abtgrid2 h1, .abtgrid3 h1 , .abtgrid4 h1 {
+    font-family: Montserrat, Arial, Helvetica, sans-serif;
+    position: absolute;
+    font-size: 13px;
+    left: 3px;
+    top: 53%;
+    margin: 0px;
+}
+.abtgrid1 ul,  .abtgrid2 ul,  .abtgrid3 ul, .abtgrid4 ul {
+    font-family: "Open Sans", Arial, Helvetica, sans-serif;
+    position: absolute;
+    line-height: 1.5;
+    font-weight: $wt-normal;
+    font-size: 12px;
+    color: $sub-heading;
+    left: -24px;
+    top: 131px;
+    width: 90%;
+    margin: 0;
+}
+}
+}
+
+@include on-sm-down{
+.aboutdiv1
+{
+    background-image: url(../Images/aboutb1.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100%;
+    height: 58vh;
+    width: 100%;
+    .abouttext
+{
+    height: 57vh;
+    width: 55%;
+    h1
+{
+    @include h1s ( 36px, Helvetica, $darker, 16% 0%);
+}
+}
+.aboutcpara
+{
+    @include h1s ( 11px, Arial, $sub-heading, -237px 14%);
+    text-align: justify;
+    line-height: 1.3em;
+    width: 40%;
+}
+}
+#abh1
+{
+     font-family: Montserrat, Arial, Helvetica, sans-serif;
+     text-align: center;
+     font-size: 40px;
+}
+.abtgrid
+{
+    @include flex(64vh, 85%, 11%, null,null, flex, relative );
+    .abtgrid1
+{
+    @include flex(28vh, 48%, null, null,null, flex, absolute );
+}
+.abtgrid3
+{
+    @include flex(28vh, 48%,  null, null, 50%, flex, absolute );
+}
+.abtgrid4
+{
+    @include flex(28vh, 48%,  51%, null, 50%, flex, absolute );
+
+}
+.abtgrid1 , .abtgrid2 , .abtgrid3 , .abtgrid4 
+{
+    img{
+        @include buttons(null, $default-radius 10px 18px $light-darken, 15px, null, null, null );
+        @include images(90px, 136px, 4% 0%, null);
+}
+h1
+{
+    @include h1s ( 15px, Helvetica, $darker, 0);
+    position: absolute;
+    left: 136px;
+    top: 12%;
+}
+ul{
+    @include h1s ( 13px, Arial, $sub-heading, null);
+    position: absolute;
+    line-height: 1.5;
+    width: 80%;
+    font-weight: $wt-normal;
+    left: -113px;
+    top: 40%;
+}
+}
+}
+}
+@include on-md-down
+{
+    .aboutdiv1
+    {
+        background-image: url(../Images/aboutb1.png);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: 100%;
+        height: 58vh;
+        width: 100%;
+        .abouttext
+{
+    height: 57vh;
+    width: 55%;
+    h1
+{
+    @include h1s ( 44px, Helvetica, $darker, 10% 1%);
+
+}
+
+    }
+    .aboutcpara
+{
+    @include h1s ( 13px, Arial, $sub-heading, -219px 14%);
+    text-align: justify;
+    line-height: 1.3em;
+    width: 40%;
+}
+}
+#abh1
+{
+     font-family: Montserrat, Arial, Helvetica, sans-serif;
+     text-align: center;
+     font-size: 45px;
+}
+.abtgrid
+{
+    @include flex(64vh, 85%, 11%, null,null, flex, relative );
+    .abtgrid1
+{
+    @include flex(28vh, 48%, null, null,null, flex, absolute );
+}
+.abtgrid3
+{
+    @include flex(28vh, 48%, null, null,50%, flex, absolute );
+}
+.abtgrid4
+{
+    @include flex(28vh, 48%, 51%, null,50%, flex, absolute );
+}
+.abtgrid1,  .abtgrid2, .abtgrid3 , .abtgrid4
+{
+    img{
+    box-shadow: $default-radius 10px 18px $light-darken;
+    border-radius: 15px;
+    margin: 4% 0%;
+    height: 14vh;
+    width: 40%;
+    }
+    h1{
+        @include h1s ( 15px, Helvetica, $darker, 0);
+    position: absolute;
+    left: 41%;
+    top: 8%;
+    text-align:  left;
+    }
+    ul{
+       @include  h1s ( 13px, Arial, $sub-heading, 0);
+    position: absolute;
+    width: 50%;
+    line-height: 1.5;
+    font-weight: $wt-normal;
+    left: 36%;
+    top: 20%;
+    }
+} 
+}
+}
+@include on-lg-down{
+    .aboutdiv1
+{
+    background-size: 100%;
+    height: 70vh;
+    width: 100%;
+    .abouttext
+{
+    height: 68vh;
+    width: 55%;
+    h1
+    {
+        font-size: 58px;
+        margin: 106px 26%;
+        padding:0;
+}
+}
+.aboutcpara
+{
+    margin: -249px 14%;
+    width: 40%;
+}
+}
+.abtgrid
+{
+    position: relative;
+    display: flex;
+    height: 64vh;
+    width: 85%;
+    left: 11%;
+    .abtgrid1 h1,.abtgrid2 h1,  .abtgrid3 h1, .abtgrid4 h1
+{
+    position: absolute;
+    font-size: 17px;
+    left: 46%;
+    top: 11%;
+    text-align: left;
+    margin: 0;
+}
+.abtgrid1 ul,.abtgrid2 ul,.abtgrid3 ul, .abtgrid4 ul {
+    font-size: 15px;
+    margin: 12% 41%;
+    width: 47%;
+}
+}
+}
+@include on-exl-down{
+
+    .aboutdiv1 .abouttext {
+        height: 68vh;
+        width: 62%;
+        h1 {
+            font-size: 83px;
+            margin: 120px 23%;
+            padding: 0;
+
+        }
+    }
+    .aboutdiv1 .aboutcpara {
+
+        margin: -206px 14%;
+        width: 39%;
+    }
+.abtgrid .abtgrid1 h1, .abtgrid .abtgrid2 h1, .abtgrid .abtgrid3 h1, .abtgrid .abtgrid4 h1 {
+        margin: 5% 3%;
+
+}
+.abtgrid .abtgrid1 ul, .abtgrid .abtgrid2 ul, .abtgrid .abtgrid3 ul, .abtgrid .abtgrid4 ul {
+
+    margin: 12% 37%;
+    width: 50%;
+ 
+}
+}

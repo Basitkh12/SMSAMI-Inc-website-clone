@@ -1,0 +1,90 @@
+@import 'properties';
+@import 'style';
+@media screen and (min-width: 730px){
+    .topnav{
+        display: none;
+    }
+} 
+.header{
+   @include flex(12vh, 100%, null, null,0, flex, sticky );
+   box-shadow: $header-rgb 0 1px 3px;
+   justify-content: space-around;
+   background-color: $basic-color;
+   align-items: center;
+   z-index: 1;
+
+   .logo img{
+   @include  boxes( 31px ,200px, 0 10px,null);
+ }
+  .navigation #abt, .navigation #ser, .navigation #prf,  .navigation #carer, .navigation #contct
+   {
+    border-top: 3px solid $royal-blue;
+    padding-top: 30px;
+    color: $royal-blue;
+   }
+   .navigation a
+{
+   @include h1s ( 14px, arial, $darker, 0 0 0 20px);
+    text-decoration-line: none;
+    font-weight: $wt-normal;
+    &:hover {
+        border-top: 3px solid $royal-blue;
+    padding-top: 30px;
+    color: $royal-blue;
+    }
+}
+}
+@media screen and (min-width: 360px) and (max-width: 730px) 
+{
+.header {
+    display: none;
+}
+.topnav {
+  overflow: hidden;
+  background-color: $basic-color;
+}
+.topnav .active img{
+    height: 31px;
+    width: 200px;
+}
+.topnav a {
+    @include h1s( 13px, "PT Sans", $basic-color, null);
+  float: left;
+  display: block;
+  color: $darker;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;;
+}
+.topnav a:hover {
+  background-color: $basic-color;
+  color: $darker;
+}
+
+.topnav a.active {
+    background-color: $basic-color;
+    color: $basic-color;
+
+}
+.topnav .icon {
+  display: none;
+}
+  .topnav a:not(:first-child) {display: none;}
+  .topnav a.icon {
+    color: $sub-heading;
+    float: right;
+    display: block;
+}
+.topnav.responsive {position: relative;}
+  .topnav.responsive .icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .topnav.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+
+  }
+}

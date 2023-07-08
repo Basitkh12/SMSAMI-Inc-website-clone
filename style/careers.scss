@@ -1,0 +1,762 @@
+@import 'properties';
+@import 'style';
+.crcentre
+{
+    background-image: url("../Images/simg.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 97%;
+   @include boxes( 85vh,100%,null,null);
+
+   .crtext{
+     @include boxes( 75vh,55%,null,null);
+
+     h1{
+        @include h1s ( 95px, sans-serif, $darker, 0% 0% 0% 26%);
+        padding-top: 10%;
+        line-height: 0.9em;
+     }
+     p{
+        @include h1s ( 17px, Arial, $sub-heading, 5% 0% 0% 25%);
+     }
+     button{
+        @include buttons($orange, 0 $default-radius 20px $darken, 50px,  10px 25px, null, 1px solid $orange );
+        margin: 4% 24%;
+        color: $basic-color;
+     }
+   }
+}
+#newH
+{
+    font-size: 100px;
+    text-align: center;
+    margin-top: 4%;
+}
+#newpara
+{
+    @include h1s ( 18px, Arial, $sub-heading, -2% 0%);
+    text-align: center;
+}
+
+.boxes{
+    @include grid(50% 50%, 50% 50%, null, grid, auto, 80%);
+    margin: 6% 13%;
+
+    .box1{
+       @include  buttons(null, 0 0 30px $default-radius $hibiscus, 20px, null, null, 1px solid $carnation-hover );
+       @include boxes( 45vh,80%,10%,null);
+    }
+   
+    .box2{
+    @include buttons(null, 0 0 30px $default-radius $mustard, 20px, null, null, 1px solid $orange );
+    @include boxes( 45vh,80%,10%,null);
+    }
+
+    .box3
+    {
+        @include buttons(null, 0 0 30px $default-radius $dark-blue, 20px, null, null, 1px solid $pipeline );
+        @include boxes(45vh,80%,10%,null);
+    }
+    .box1 img ,   .box2 img,  .box3 img
+    {
+        @include  boxes( 120px,130px,1% 4%,null);
+    }
+     .box1 #s , .box2 #s ,  .box3 #s
+     {
+       @include h1s ( 16px, Arial,$sub-heading, 3% 4%);
+     }
+      .box1 h2 , .box2 h2,  .box3 h2
+   {
+    margin: 3% 4%;
+    font-size: 20px;
+    }
+     .box1 #s2, .box2 #s2 ,.box3 #s2
+{
+    text-decoration-line: none;
+    font-weight: $wt-bold;
+    margin-left: 4%;
+    color: $pipeline;
+}
+}
+.perks
+{
+   @include boxes( 90vh,80%,10% 13%,null);
+   .awesome
+   {
+    background: transparent linear-gradient(116deg, $orange 0%, $basic-orange 100%) 0% 0% no-repeat padding-box;
+     border-radius: 50px;
+     height: 80vh;
+     width: 100%;
+
+     h1{
+        @include h1s ( 70px, Helvetica, $basic-color, 0px);
+        text-align: center;
+     }
+     p{
+        @include h1s ( 16px, Arial, $darker, 3% 0%);
+        text-align: center;
+     }
+     img {
+        padding-left: 95%;
+        margin-top: -8%;
+     }
+   }
+   .bullets
+   {
+    @include boxes( 15vh,20%,5% 9%,null);
+    font-weight: $wt-bold;
+    font-size: 14px;
+    color: $basic-color;
+   }
+   .bullet2
+   {
+    @include boxes( 15vh,20%,-15% 38%,null);
+    font-weight: $wt-bold;
+    font-size: 14px;
+    color: $basic-color;
+   }
+   .bullet3
+    {  
+        @include boxes( 15vh,20%,5% 69%,null);
+        font-weight: $wt-bold;
+        font-size: 14px;
+        color: $basic-color;
+      }
+
+      .bar {
+        @include buttons($basic-color, 0 0 30px $default-radius $light-dark, 70px, null, null,null );
+        @include boxes( 20vh,80%,-8% 11%,null);
+        h1
+        {
+            @include h1s ( 50px, null, $alternate-primary, null);
+            padding: 3% 12%;
+        }
+        p{
+           @include h1s ( 16px, null, $sub-heading,-5% 9%);
+             font-weight: $wt-bold;
+        }
+        #H2
+        {
+            text-align: center;
+            margin: -12%;
+        }
+        #p2
+        {
+           @include h1s ( 16px, null, $sub-heading,null);
+            text-align:center;
+            padding-top: 10%;
+            font-weight: $wt-bold;
+        }
+        #H3{
+            text-align: right;
+            margin: -12% -2%;
+        }
+        #p3
+        {
+           @include h1s ( 16px, null, $sub-heading, null);
+            font-weight: $wt-bold;
+            text-align: right;
+            margin-top: 10%;
+        }
+      }
+}
+#buble{
+    margin: -18% 0% 15% 12%;
+}
+/* RESPONSIVENESS*/
+
+@include on-xs-down{
+    .crcentre 
+    {
+    background-image: url(../Images/simg.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 97%;
+    height: 69vh;
+    width: 100%;
+    .crtext 
+{
+    @include boxes( 68vh,70%,0%,null);
+    h1 {
+       @include h1s ( 50px, Helvetica, $darker, 32% 5%);
+        padding-top: 0%;
+        line-height: 1em;
+    }
+    p {
+        margin: -75px 0 0 4%;
+        color: $sub-heading;
+    }
+    button {
+        @include buttons($orange, 0 $default-radius 20px $darken, 50px, 10px 25px, null, 1px solid $orange );
+        margin-left: 4%;
+        color: $basic-color;
+    }
+}
+}
+#newH {
+    text-align: center;
+    font-size: 40px;
+    margin: 6% 0 0 0;
+}
+#newpara {
+    @include h1s( 18px, Arial, $sub-heading, 11px 0);
+    text-align: center;
+}
+.boxes {
+   @include grid( 50% 50%, 50% 50%, null, grid, auto, 100%);
+    margin: 60px 0 0 0;
+    .box1 {
+        @include buttons(null, 0 0 30px $default-radius $hibiscus,  20px, null, null, 1px solid $carnation-hover );
+        margin: 0%;
+        height: 46vh;
+        width: 95%;
+    }
+    .box2 {
+        @include buttons(null, 0 0 30px $default-radius $mustard,  20px, null, null, 1px solid $orange );
+        height: 46vh;
+        margin: 0%;
+        width: 94%;
+    }
+    .box3 {
+        @include buttons(null, 0 0 30px $default-radius $dark-blue,  20px, null, null, 1px solid $pipeline);
+        margin: 5% 0%;
+        height: 46vh;
+        width: 86%;
+    }
+    .box1 img, .box2 img, .box3 img {
+        padding: 10px 10px;
+        height: 110px;
+        width: 110px;
+    }
+     .box1 h2,  .box2 h2, .box3 h2 {
+        margin: 0% 6%;
+        font-size: 15px;
+    }
+    .box1 #s,  .box2 #s, .box3 #s 
+{
+    margin: 10px 0 0 9px;
+    font-size: 11px;
+    color: $sub-heading;
+}
+.box1 #s2, .box2 #s2, .box3 #s2 {
+    text-decoration-line: none;
+    font-size: 13px;
+    font-weight: $wt-bold;
+    margin: 4% 11%;
+    color: $pipeline;
+}   
+}
+.perks 
+{
+    @include boxes( 79vh,100%, 75px 0 0 0,null);
+    .awesome {
+        background-color: $orange;
+        border-radius: 50px;
+        height: 71vh;
+        width: 100%;
+        img {
+            @include boxes( 80px,80px, -45px 0 0 0,0 0 0 81%);
+        }
+        h1 {
+            @include  h1s ( 30px, Helvetica, $basic-color, 0);
+            text-align: center;
+        }
+        p {
+            @include h1s ( 12px, Arial, $darker, 4% 0 0 0);
+            text-align: center;
+        }
+    }
+    .bullets {
+        @include h1s ( 11px, Arial, $basic-color, 30px 0 0 3%);
+        font-weight: $wt-bold;
+        height: 105px;
+        width: 146px;
+    }
+        .bullet2
+        {
+           @include h1s ( 11px, Arial, $basic-color, -111px 0 0 54%);
+        font-weight:$wt-bold;
+        height: 105px;
+        width: 154px;
+        }
+        .bullet3 {
+           @include h1s ( 11px, Arial, $basic-color, 18px 0 0 3%);
+            font-weight: $wt-bold;
+            height: 117px;
+            width: 153px;
+        }
+        .bar {
+           @include buttons($basic-color,  0 0 30px $default-radius $light-dark, 70px, 0, null, null );
+            margin: -61px 0 0 9px;
+            height: 88px;
+            width: 92%;
+            h1 {
+                margin: 20px -2%;
+            font-size: 33px;
+            color: $alternate-primary;
+        }
+        p {
+            @include h1s ( 12px, Arial, $sub-heading,-31px 4%);
+            padding: 0%;
+            font-weight:$wt-bold;
+        }
+        #H2 {
+        margin: -53px;
+        padding: 0%;
+        font-size: 33px;
+        text-align: center;
+    }
+     #p2 {
+        @include h1s ( 12px, Arial, $sub-heading, 56px);
+        text-align: center;
+        font-weight: $wt-bold;
+        padding: 0%;
+    }
+    #H3
+ {
+   margin: -115px 76%;
+    padding: 0%;
+    font-size: 33px;
+}
+#p3 {
+    @include h1s ( 12px, Arial, $sub-heading,119px 77%);
+    font-weight: $wt-bold;
+    padding: 0%;
+}
+        }       
+}
+#buble{
+    margin: -101px  0% 15% 0%;
+    width: 50px;
+    height: 50px;
+}
+}
+@include on-sm-down{
+    .crcentre
+{
+    background-image: url(../Images/simg.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 97%;
+    height: 56vh;
+    width: 100%;
+    .crtext
+{    
+    margin-left: 1px;
+    height: 56vh;
+    width: 50%;
+    h1
+    {
+        @include h1s ( 39px, Helvetica, $darker, 0 0 0 76px);
+        padding-top: 50px;
+        line-height: 1em;
+    }
+    p
+    {
+        @include h1s ( 17px, Helvetica, $sub-heading, 22px 0 0 75px);
+    }
+    button
+{
+    @include buttons( $orange, null, 50px, 10px 25px, null, 1px solid $orange );
+    margin-left: 62px;
+    color: $basic-color;
+}
+}
+}
+#newH
+{
+    @include h1s ( 55px, Helvetica, $darker, 35px  0 0 0);
+    text-align: center;
+}
+#newpara
+{
+    @include h1s ( 14px, Arial, $sub-heading, 3%  0 0 0);
+    text-align: center;
+}
+.boxes
+{
+   @include grid( 50% 50%, 50% 50%, null, grid, 132vh, 100%);
+    margin:60px 0 0 0;
+     .box1
+{
+    @include buttons(null,  0 0 30px $default-radius $hibiscus, 20px, null, null, 1px solid $carnation-hover );
+    margin: 3%;
+    height: 72%;
+    width: 95%;
+}
+.box2 
+{
+    @include buttons(null,  0 0 30px $default-radius $mustard, 20px, null, null, 1px solid $orange );
+    margin: 3%;
+    height: 72%;
+    width: 95%;
+}
+.box3
+{
+    @include buttons(null,  0 0 30px $default-radius $dark-blue, 20px, null, null, 1px solid $pipeline );
+    margin: 3%;
+    height: 72%;
+    width: 95%;
+}
+.box1 ,  .box2,.box3
+{
+    img{
+        @include images(30%, 30%, null, 7px 13px);
+    }
+    h2{
+        margin: -4px 16px;
+        font-size: 17px;
+    }
+    #s{
+        @include  h1s ( 14px, Arial, $sub-heading, 10px 0 0 12px);
+    }
+    #s2{
+        @include  h1s ( 14px, Helvetica, $light-blue, 10px 0 0 12px);
+    } 
+}
+}
+.perks
+{
+   @include boxes( 91vh,99%,33px  0 0 0,null);
+   .awesome
+{
+    background-color: $orange;
+    border-radius: 50px;
+    height: 87%;
+    width: 100%;
+    img
+{
+    @include images(100px, 90px, -53px 0 0 0,  0 0 0 89%);
+ }
+ h1
+{
+    @include h1s ( 50px, Helvetica, $basic-color, 0);
+    text-align: center;
+}
+p
+{
+    @include h1s ( 13px, Arial, $darker, 3%  0 0 0 ) ;
+    text-align: center;
+}
+}
+.bullets
+{
+    @include boxes( 128px,172px,28px 0 0 $default-radius,null);
+    font-weight: $wt-bold;
+    font-size: 13px;
+    color: $basic-color;
+}
+.bullet2
+{
+    @include boxes( 128px,172px,-133px 0 0 33%,null);
+    font-weight: $wt-bold;
+    font-size: 14px;
+    color: $basic-color;
+}
+.bullet3
+{ 
+    @include boxes( 128px,172px,-133px 0 0 66%,null);
+    font-weight: $wt-bold;
+    font-size: 14px;
+    color: $basic-color;
+}
+.bar
+{
+    background-color: $basic-color;
+    border-radius: 70px;
+    @include boxes( 19vh,83%,-79px 0 0 81px,null);
+    h1
+    {
+        @include h1s ( 40px, Helvetica, $alternate-primary, null);
+        padding: 2% 0 0 43px;
+    }
+    p
+{
+    @include h1s ( 13px, Arial, $sub-heading, -23px 0 0 0);
+    padding: 0 0 0 21px;
+    font-weight: $wt-bold;
+}
+#H2
+{
+    @include h1s ( 35px, Helvetica, $alternate-primary, -75px 0 0 0);
+    text-align: center;
+}
+#p2
+{
+    @include h1s ( 13px, Arial, $sub-heading, 3px 0 0 0);
+    padding: 0;
+    text-align: center;
+    font-weight: $wt-bold;
+}
+#H3
+{
+    text-align: right;
+   margin: -69px 20px 0 0;
+    font-size: 35px;
+}
+#p3
+{
+    text-align: right;
+    font-weight: $wt-bold;
+    margin: 2px 15px 0 0;
+    font-size: 13px;
+    color: $sub-heading;
+}
+}
+}
+#buble{
+    margin: -120px 0px 54px -1px;
+}
+}
+@include on-md-down{
+    .crcentre
+    {
+        background-size: 97%;
+        height: 56vh;
+        width: 100%;
+        .crtext
+{    
+    @include  boxes( 56vh,50%,0 0 0 1px,null);
+    h1
+    {
+        @include h1s ( 42px, Helvetica, $darker, 0 0 0 103px);
+        padding-top: 74px;
+    }
+    p
+{
+    @include h1s ( null, Arial, $sub-heading, 25px 0 0 104px);
+}
+}
+    }
+    #newH
+    {
+        @include h1s ( 55px, Helvetica, $darker, 35px 0 0 0);
+    }
+    #newpara
+    {
+        @include h1s ( 13px, Arial, $sub-heading, 12px 0 0 0);
+    }
+    .boxes
+    {
+        @include grid(50% 50%, 50% 50%, null, grid, 132vh, 99%);
+        margin: 60px 0 0 1%;
+        .box1, .box2, .box3
+        {
+            height: 55vh;
+            width: 85%;
+
+            #s{
+                margin:10px 0 0 17px;
+                font-size: 15px;
+                color: $sub-heading;
+            }
+            #s2{
+                margin: 30px 0 0 17px;
+                font-size: 16px;
+            }
+        }
+    }
+.perks
+    {
+        @include  boxes( 91vh ,99%, 33px 0 0 0,null);
+        .awesome
+{
+    height: 87%;
+    width: 100%;
+    img
+{
+    @include images(90px, 90px, -48px 0 0 0, 0 0 0 89%);
+ }
+}
+.bullets
+{
+    @include boxes( 128px,172px,30px 0 0 $default-radius,null);
+    font-size: 15px;
+}
+.bullet2
+{
+    @include boxes( 128px,190px, -129px 0 0 36%, null);
+    font-size: 15px;
+}
+.bullet3
+{ 
+    @include boxes( 128px,200px, -129px 0 0 70%, null);
+    font-size: 15px;
+}
+.bar{
+ h1
+{
+    padding: 20px 0 0 63px;
+}
+p{
+    padding-left: 36px;
+    margin: -28px 0 0 0;
+}
+#H2
+{
+    margin: -98px 0 0 0;
+}
+#p2
+{
+    padding: 0;
+    margin: 0px 0 0 7px;
+    font-size: 16px;
+}
+#H3
+{
+    margin: -97px 39px 0 0;
+}
+#p3
+{
+    margin: -1px 32px 0 0;
+}
+}
+    }
+    #buble {
+        margin: -18% 0% 15% 0%;}
+        
+}
+@include on-lg-down{
+    .crcentre
+    {
+        background-size: 97%;
+        height: 65vh;
+        width: 100%;
+        .crtext
+        {    
+            margin-left: 1px;
+            height: 64vh;
+            width: 50%;
+            h1
+{
+    margin:0 0 0 144px;
+    padding-top: 60px;
+    font-size: 68px;
+}
+p
+{
+    margin: 25px 0 0 157px;
+}
+button
+{
+    margin-left: 150px;
+}
+}
+}
+.boxes .box1,.boxes .box2,.boxes .box3
+{
+    height: 55vh;
+    width: 85%;
+}
+.boxes .box1 #s, .boxes .box2 #s, .boxes .box3 #s {
+    color: $sub-heading;
+}
+
+.perks
+{
+    margin-left: 5%;
+    margin-top: 33px;
+    height: 91vh;
+    width: 90%; 
+.awesome{
+    img
+{
+    padding-left: 92%;
+    margin-top: -52px;
+    width: 120px;
+    height: 120px;
+ }
+ .bullets
+ {
+     margin:30px 0 0  30px;
+     height: 128px;
+     width: 172px;
+ }
+ .bullet2
+{
+    margin:-132px 0 0  36%;
+    height: 128px;
+    width: 172px;
+}
+.bullet3
+{ 
+    margin: -130px 0 0 70%;
+    height: 128px;
+    width: 188px;
+}
+    }
+    .bar h1
+{
+    padding: 20px 0 0 70px;
+}
+.bar p
+{
+    padding-left: 42px;
+    margin: -27px 0 0 0;
+}
+.bar #H2
+{
+    margin: -102px 0 0 0;
+}
+.bar #p2
+{
+    padding: 2px 0 0 42px;
+    margin: 5px 0 0 -15px;
+}
+.bar #H3
+{
+    text-align: right;
+    margin: -105px 7%;
+}
+.bar #p3{
+    margin: 110px 43px 0 0;
+}
+}
+#buble {
+    margin: -27% 0% 16% 2%;
+}
+}
+@include on-exl-down
+{
+
+    .boxes .box1, .boxes .box2,.boxes .box3{
+        height: 55vh;
+    }
+    .perks .bullets {
+    
+        margin: 37px 9%;
+    
+    }
+    .perks .bullet2 {
+        margin: -140px 38%;
+
+    }
+    .perks .bullet3 {
+        margin: 39px 69%;
+    }
+    .perks .bar p {
+        margin: -6% 9%;
+
+    }
+    .perks .bar #H3
+ {
+  padding-left: 650px;
+    margin-top: -116px;
+}
+.perks .bar #H2 {
+    text-align: center;
+    margin: -86px 0 0 0;
+    padding: 0;
+    }
+
+.perks .bar #p2 {
+    padding: 7% 0 0 0;
+}
+.perks .bar #H3 {
+    padding-left: 631px;
+    margin-top: -108px;
+}
+.perks .bar #p3 {
+    margin: 10% 9% 0 0;
+}
+}

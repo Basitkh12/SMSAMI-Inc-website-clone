@@ -1,0 +1,443 @@
+@import 'properties';
+@import 'style';
+.servicediv1
+{
+    @include boxes( 85vh,100%,none,none);
+    background-image: url(../Images/servicesb1.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 98%;
+    .servicetext
+    {
+        @include boxes( 68vh,55%,none,none);
+
+        h1{
+           @include h1s ( 95px,  Helvetica, $darker, 0% 26%);
+           line-height: 1em;
+           padding-top: 18%;
+        }
+    }
+    .servicecpara 
+    {
+      @include  h1s ( 16px, Arial, $sub-heading, -17% 14%);
+    text-align: justify;
+    font-style: normal;
+    font-weight: $wt-normal;
+    width: 33%;
+    }
+}
+.offer
+{
+   @include boxes( 23vh,100%,5% 0%,none);
+   h1{
+     @include  h1s ( 70px, Helvetica, $darker, -4% 0%);
+    text-align: center;
+   }
+   img{
+    @include boxes( 14vh, none, 0% 0% 0% 26%,none);
+   }
+}
+.work
+{
+  display: flex;
+  width: 65%;
+  margin: auto;
+  flex-direction: column;
+
+     .work1 , .work3,  .work5
+     {
+      display: flex;
+     }
+     .work2,  .work4 , .work6{
+      display: flex;
+    flex-direction: row-reverse;
+     }
+    .work1 img ,  .work3 img, .work5 img
+    {
+      width: 180px;
+
+    }
+    .work1 .text,.work3 .text, .work5 .text
+    {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      h1{
+        font-size: 24px;
+        font-family: Helvetica;
+        color: #000;
+      }
+      p{
+        font-size: 16px;
+        font-family: Arial;
+        color: #999;
+        line-height: 1.5;
+      }
+    }
+   .work2 img ,  .work4 img,  .work6 img
+   {
+    width: 180px;
+   }
+   .work2 .text2, .work4 .text2 ,.work6 .text2 
+   {
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    h1{
+      font-size: 24px;
+      font-family: Helvetica;
+      color: #000;
+  }
+  p{
+    font-size: 16px;
+    font-family: Arial;
+    color: #999;
+    line-height: 1.5;
+    text-align: right;
+  }
+   }
+}
+
+                        /* RESPONSIVENESS*/
+
+ @include on-xs-down
+ {
+  .servicediv1 
+  {
+      background-image: url(../Images/servicesb1.png);
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: 98%;
+      height: 70vh;
+      width: 100%;
+      .servicetext
+ {
+    height: 68vh;
+    width: 89%;
+    h1 {
+      @include h1s ( 70px, Helvetica, null, 9% 5%);
+      line-height: 1em;
+  }
+}
+.servicecpara {
+  @include h1s ( 15px, Arial, $sub-heading, -260px 0 0 4%);
+  text-align: justify;
+  font-style: normal;
+  font-weight:$wt-normal;
+  width: 76%;
+}
+  }
+  .offer 
+{
+  @include boxes( 12vh,100%, 5% 0 0 0,null);
+  img 
+{
+  @include boxes( 40px,40px,0 0 0 18%,null);
+}
+h1 {
+  @include h1s ( 35px, Helvetica, $darker, -4% 0 0 0);
+  text-align: center;
+}
+}
+.work{
+  .work1,  .work3,  .work5 
+{
+    height: 35vh;
+    width: 100%;
+    img{
+      @include boxes( 130px,130px,-20px -27px,null);
+    }
+    h1{
+      @include h1s ( 23px, Helvetica, $darker, -72px 79px);
+    }
+    p{
+      @include h1s ( 14px, Sans-serif, $sub-heading, 107px 1%);
+      line-height: 1.5;
+    }
+}
+.work2,  .work4, .work6
+{
+  height: auto;
+  width: 100%;
+  img{
+   @include  boxes( 130px,130px,-33px 0% 0% 72%,null);
+  }
+  h1{
+    @include h1s ( 23px, Montserrat, $darker, -93px 128px);
+    text-align: right;
+  }
+  p{
+    @include h1s ( 14px, Arial, $sub-heading, 125px 0%);
+    text-align: right;
+    line-height: 1.5;
+    height: 9vh;
+    width: 99%;
+  }
+}
+}
+ }
+
+ @include on-sm-down
+ {
+  .servicediv1
+{
+    background-image: url(../Images/servicesb1.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 98%;
+    height: 55vh;
+    width: 100%;
+    .servicetext
+{
+    height: 54vh;
+    width: 55%;
+    h1
+    {
+      @include h1s ( 49px, Helvetica, $darker, 9% 26%);
+        line-height: 1em;
+    }
+}
+.servicecpara 
+{   
+    @include h1s ( 12px, Arial, $sub-heading, -200px 0 0 14%);
+    text-align: justify;
+    font-style: normal;
+    font-weight: $wt-normal;
+    width: 39%;
+}
+}
+.offer
+{
+ @include  boxes( 12vh,100%, 5% 0 0 0,null);
+ h1
+ {
+  @include h1s ( 27px, Helvetica, $darker, -5% 0 0 0);
+     text-align: center;
+ }
+ img
+{
+    margin-left: 25%;
+    height: 9vh;  
+}
+}
+.work
+{
+    flex-direction: column;
+    align-items: center;
+    display: flex;
+    .work1 ,  .work3, .work5
+{
+    height: 27vh;
+    width: 95%;
+    img{
+      @include images(120px, 120px, 0% -2%, null);
+    }
+    h1{
+      @include h1s ( 18px, Helvetica, $darker, -16% 20%);
+    }
+    p{
+      @include h1s ( 13px, Arial, $sub-heading, 19% 20%);
+    line-height: 1.5;
+    }
+}
+.work2,  .work4 ,  .work6
+{
+    height: 27vh;
+    width: 95%;
+    img{
+      @include images(120px, 120px, -1% 0% 0% 79%, null);
+    }
+    h1{
+      @include h1s ( 18px, Helvetica, $darker, -16% 27%);
+      text-align: right;
+    }
+    p{
+      @include h1s ( 13px, Arial, $sub-heading, 17% 0%);
+      text-align: right;
+      line-height: 1.5;
+      height: 9vh;
+      width: 76%;
+    }
+}
+}
+ }
+
+ @include on-md-down
+ {
+  .servicediv1
+  {
+      background-image: url(../Images/servicesb1.png);
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: 98%;
+      height: 55vh;
+      width: 100%;
+      .servicetext
+{
+    height: 54vh;
+    width: 55%;
+    h1
+{
+  @include h1s ( 54px, Helvetica, $darker, 25px 26%);
+    line-height: 1em;
+}
+}
+.servicecpara 
+{   
+  @include h1s ( 13px, Arial, $sub-heading, -185px 0 0 14%);
+
+    text-align: justify;
+    font-style: normal;
+    font-weight: $wt-normal;
+    width: 39%;
+}
+  }
+  .offer
+{
+  @include boxes( 12vh,100%, 5% 0 0 0,null);
+  h1
+{
+  @include h1s ( 31px, Helvetica, $darker, -5% 0 0 0);
+    text-align: center;
+}
+img
+{
+    margin-left: 25%;
+    height: 10vh;  
+}
+}
+.work
+{
+    flex-direction: column;
+    align-items: center;
+    display: flex;
+    .work1 , .work3, .work5
+{
+    height: 27vh;
+    width: 95%;
+    img{
+     @include  images(150px, 150px, 0% -2%, null);
+    }
+    h1{
+      @include h1s ( 19px, Helvetica, $darker, -15% 17%);
+    }
+    p{
+      @include h1s ( 13px, Arial, $sub-heading, 17% 17%);
+      line-height: 1.5;
+    }
+}
+.work2, .work4 , .work6
+{
+    height: 27vh;
+    width: 95%;
+    img{
+     @include images(150px, 150px, -1% 0% 0% 79%, null);
+    }
+    h1{
+      @include h1s ( 19px, Helvetica, $darker, -15% 21%);
+      text-align: right;
+    }
+    p{
+      @include h1s ( 13px, Arial, $sub-heading,17% 3%);
+      text-align: right;
+      line-height: 1.5;
+      height: 9vh;
+      width: 76%;
+    }
+}
+}
+ }
+ @include on-lg-down{
+  .servicediv1
+{
+    background-size: 98%;
+    height: 64vh;
+    width: 100%;
+    .servicetext
+{
+    height: 63vh;
+    width: 55%;
+    h1
+{
+  padding-top: 0;
+  margin: 103px 26%;
+    font-size: 60px;
+}
+}
+.servicecpara 
+{   
+    margin: -217px 0 0 14%;
+    font-size: 14px;
+    width: 39%;
+}
+}
+.offer h1
+{
+    text-align: center;
+    font-size: 45px;
+    margin-top: -5%;
+}
+.work .work1,.work .work2 , .work .work3, .work .work4, .work .work5, .work .work6
+{
+    height: 35vh;
+    width: 95%;
+}
+.work .work1 img , .work .work3 img, .work .work5 img
+{
+  @include images(170px, 170px, 0% -2%, null);
+}
+.work .work2 img , .work .work4 img, .work .work6 img
+{
+  @include images(170px, 170px,-1% 0% 0% 79%, null);
+}
+.work .work1 h1, .work .work3 h1 , .work .work5 h1
+{
+  margin: -124px 17%;
+}
+.work .work1 p , .work .work3 p , .work .work5 p
+{
+ 
+    margin: 140px 17%;
+}
+.work .work2 h1, .work .work4 h1 , .work .work6 h1
+{
+    text-align: right;
+    margin: -126px 24%;
+}
+.work .work2 p , .work .work4 p , .work .work6 p
+{
+    text-align: right;
+      margin: 146px 0%;
+    height: 9vh;
+    width: 76%;
+}
+ }
+ @include on-exl-down
+ {
+  .servicediv1 .servicecpara {
+    margin: -207px 0 0 14%;
+    width: 33%;
+}
+.offer img{
+  margin-left: 21%;
+}
+.work .work1, .work .work3, .work .work5,.work .work2, .work .work4, .work .work6 
+{
+    height: 35vh;
+    width: 86%;
+}
+.work .work1 h1, .work .work3 h1, .work .work5 h1 {
+    margin: -141px 20%;
+}
+.work .work2 h1, .work .work4 h1, .work .work6 h1 {
+  margin: -128px 36%;
+  font-size: 24px;
+}
+.work .work2 p, .work .work4 p, .work .work6 p {
+  margin: 147px 5%;
+}
+.work .work1 p, .work .work3 p, .work .work5 p {
+  margin: 159px 20%;
+}
+ }
